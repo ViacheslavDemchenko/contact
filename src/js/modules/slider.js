@@ -5,13 +5,11 @@ export default function slider() {
     const swiper = new Swiper('.thanks__slider', {
       spaceBetween: 42,
       loopedSlides: 1,
-      // slidesPerView: 3,
-      slidesPerView: "auto",
-      freeMode: true,
-      centeredSlides: true,
-      // centeredSlides: false,
+      slidesPerView: 1,
+      // centeredSlides: true,
       loop: true,
-      // autoHeight: true,
+      cssMode: true,
+      autoHeight: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -36,9 +34,7 @@ export default function slider() {
         // 1440: {
         //   spaceBetween: 42,
         //   loopedSlides: 1,
-        //   slidesPerView: 3,
-        //   slidesPerView: "auto",
-        //   centeredSlides: true,
+        //   slidesPerView: 3
         // },
       }
     });

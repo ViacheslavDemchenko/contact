@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
   /* COLORS */
   --black-main: #000;
@@ -193,7 +195,24 @@ footer {
 
 .btn--yellow {
   position: relative;
+  display: block;
+  border-radius: 1.5rem;
+  color: #212123;
+  border: 0.1rem solid transparent;
+  background-clip: padding-box;
+  transition: box-shadow 0.3s;
+  position: relative;
   padding: 1.7rem 6.7rem;
+}
+
+.btn--yellow::after {
+  content: "Заказать";
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   font-weight: 700;
   font-size: 2.2rem;
   line-height: 2.6rem;
@@ -203,12 +222,20 @@ footer {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  border-image: linear-gradient(104.73deg, #E8C300 -1.85%, #F6FF8A 45.56%, #E8C300 107.17%);
-  -webkit-border-image: -webkit-linear-gradient(104.73deg, #E8C300 -1.85%, #F6FF8A 45.56%, #E8C300 107.17%);
-  border-image-slice: 1;
-  border-width: 0.15rem;
-  border-style: solid;
-  border-radius: 1.5rem;
+}
+
+.btn--yellow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -5px;
+  border-radius: inherit;
+  background: -webkit-gradient(104.73deg, #E8C300 -1.85%, #F6FF8A 45.56%, #E8C300 107.17%);
+  background: linear-gradient(104.73deg, #E8C300 -1.85%, #F6FF8A 45.56%, #E8C300 107.17%);
 }
 
 /**
@@ -1847,7 +1874,7 @@ nav ul li a {
 
 .thanks .swiper-wrap {
   width: 100%;
-  max-width: 157.6rem;
+  max-width: 153.4rem;
   margin: 0 auto;
 }
 

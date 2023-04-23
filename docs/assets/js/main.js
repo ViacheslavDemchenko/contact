@@ -4686,13 +4686,11 @@ function slider() {
     var swiper = new _libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0___default.a('.thanks__slider', {
       spaceBetween: 42,
       loopedSlides: 1,
-      // slidesPerView: 3,
-      slidesPerView: "auto",
-      freeMode: true,
-      centeredSlides: true,
-      // centeredSlides: false,
+      slidesPerView: 1,
+      // centeredSlides: true,
       loop: true,
-      // autoHeight: true,
+      cssMode: true,
+      autoHeight: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -4717,9 +4715,7 @@ function slider() {
         // 1440: {
         //   spaceBetween: 42,
         //   loopedSlides: 1,
-        //   slidesPerView: 3,
-        //   slidesPerView: "auto",
-        //   centeredSlides: true,
+        //   slidesPerView: 3
         // },
       }
     });

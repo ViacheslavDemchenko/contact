@@ -4686,10 +4686,10 @@ function slider() {
     var swiper = new _libs_swiper_bundle_min_js__WEBPACK_IMPORTED_MODULE_0___default.a('.thanks__slider', {
       spaceBetween: 42,
       loopedSlides: 1,
-      slidesPerView: 1,
+      slidesPerView: 3,
       // centeredSlides: true,
-      loop: true,
-      cssMode: true,
+      // loop: true,
+      // cssMode: true,
       autoHeight: true,
       navigation: {
         nextEl: '.swiper-button-next',

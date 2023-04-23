@@ -5,10 +5,10 @@ export default function slider() {
     const swiper = new Swiper('.thanks__slider', {
       spaceBetween: 42,
       loopedSlides: 1,
-      slidesPerView: 1,
+      slidesPerView: 3,
       // centeredSlides: true,
-      loop: true,
-      cssMode: true,
+      // loop: true,
+      // cssMode: true,
       autoHeight: true,
       navigation: {
         nextEl: '.swiper-button-next',

@@ -1,0 +1,74 @@
+.advantages {
+  padding: 15.9rem 0 11.4rem 0;
+  background: radial-gradient(48.1% 14.67% at 50% 29.31%, rgba(152, 206, 255, 0.2) 0%, rgba(152, 206, 255, 0) 100%), radial-gradient(52.3% 14.74% at 50% 83.96%, rgba(152, 206, 255, 0.2) 0%, rgba(152, 206, 255, 0) 100%), radial-gradient(44.41% 31.46% at 50% 54.98%, rgba(152, 206, 255, 0.42) 0%, rgba(152, 206, 255, 0) 97.38%);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__top{
+    width: 100%;
+    max-width: 113rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      margin-bottom: 6.5rem;
+      font-family: 'Apple SD Gothic Neo';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 5.2rem;
+      line-height: 6.2rem;
+      color: var(--white-main);
+    }
+
+    img {
+      position: relative;
+      z-index: 10;
+      transform: translateY(-8.5rem);
+    }
+  }
+
+  &__list {
+    transform: translateY(-11rem);
+    width: 100%;
+    max-width: 117rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    max-width: 113rem;
+    padding: 3.8rem 4.6rem 3.2rem 5rem;
+    border: 0.1rem solid #180D5B;
+    border-radius: 2.5rem;
+
+    &:nth-of-type(odd) {
+      background: radial-gradient(49.58% 50% at 50% 50%, rgba(47, 43, 114, 0.4) 0%, rgba(48, 44, 116, 0) 100%), #201D54;
+    }
+
+    &:nth-of-type(even) {
+      align-self: flex-end;
+      background: radial-gradient(49.58% 50% at 50% 50%, rgba(47, 43, 114, 0.4) 0%, rgba(48, 44, 116, 0) 100%), #161445;
+    }
+
+    h3 {
+      margin-bottom: 3rem;
+      font-family: 'Apple SD Gothic Neo';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 3.6rem;
+      color: var(--white-main);
+    }
+
+    p {
+      font-family: 'Apple SD Gothic Neo';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 2.2rem;
+      line-height: 125%;
+      color: var(--white-main);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'Контакт';
+
+block content
+  .wrapper
+    include ./../components/sections/header/header.pug
+    main
+      include ./../components/sections/offer/offer.pug
+      include ./../components/sections/chop/chop.pug
+      include ./../components/sections/gift/gift.pug
+      include ./../components/sections/rate/rate.pug
+      include ./../components/sections/question/question.pug
+      include ./../components/sections/advantages/advantages.pug
+      include ./../components/sections/license/license.pug
+      include ./../components/sections/thanks/thanks.pug
+      include ./../components/sections/questions-full/questions-full.pug
+      include ./../components/sections/footer/footer.pug

@@ -1,0 +1,50 @@
+.btn {
+  text-align: center;
+  font-family: 'Apple SD Gothic Neo';
+  font-style: normal;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  border-radius: 1.5rem;
+
+  &--transparent {
+    padding: 1.7rem 6.7rem;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: var(--dark-green);
+    border: 0.1rem solid var(--dark-green);
+    background: transparent;
+  }
+
+  &--green {
+    padding: 2.2rem 2.5rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    color: var(--black-main);
+    background: var(--dark-green);
+  }
+
+  &--yellow {
+    position: relative;
+    padding: 1.7rem 6.7rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    color: var(--black-main);
+    background: linear-gradient(104.73deg, #E8C300 -1.85%, #F6FF8A 45.56%, #E8C300 107.17%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    border-image: linear-gradient(104.73deg, #E8C300 -1.85%, #F6FF8A 45.56%, #E8C300 107.17%);
+    -moz-border-image: -moz-linear-gradient(104.73deg, #E8C300 -1.85%, #F6FF8A 45.56%, #E8C300 107.17%);
+    -webkit-border-image: -webkit-linear-gradient(104.73deg, #E8C300 -1.85%, #F6FF8A 45.56%, #E8C300 107.17%);
+    border-image-slice: 1;
+    border-width: 0.15rem;
+    border-style: solid;
+    border-radius: 1.5rem;
+  }
+}

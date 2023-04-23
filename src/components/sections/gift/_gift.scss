@@ -1,0 +1,129 @@
+.gift {
+  padding: 9.1rem 0 10.7rem 0;
+
+  &__inner {
+    position: relative;
+    width: 100%;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 62%;
+      left: -2rem;
+      transform: translateY(-70%);
+      width: 70%;
+      height: 62%;
+      background: radial-gradient(52.7% 52.7% at 50.59% 50%, rgba(63, 58, 148, 0.4) 0%, rgba(63, 58, 148, 0) 100%), radial-gradient(41.37% 41.37% at 19.51% 52.86%, rgba(217, 217, 217, 0.224) 0%, rgba(217, 217, 217, 0) 100%);
+      filter: blur(10rem);
+      border-radius: 7.6rem;
+    }
+
+    h2 {
+      max-width: 90.2rem;
+      margin: 0 auto 12.3rem auto;
+      font-family: 'Apple SD Gothic Neo';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 5.2rem;
+      line-height: 6.2rem;
+      text-align: center;
+      color: var(--white-main);
+    }
+  }
+
+  &__block {
+    position: relative;
+    width: 100%;
+    max-width: 136rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 8.8rem auto;
+    padding: 7.5rem 9.5rem 7.5rem 0;
+    background: url("../img/icons/gift-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    &::after,
+    &::before {
+      position: absolute;
+      z-index: 10;
+      content: "";
+      top: -0.8rem;
+      width: 40.9rem;
+      height: 2rem;
+      background: url("../img/icons/line.svg") 100% 100%/cover no-repeat;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+    &::before {
+      right: 35rem;
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 57rem;
+      height: 57.1rem;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 59.5rem;
+    align-self: flex-end;
+
+    p,
+    span {
+      font-family: 'Apple SD Gothic Neo';
+      font-style: normal;
+    }
+
+    p {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 400;
+      font-size: 3rem;
+      line-height: 3.6rem;
+      color: var(--white-main);
+
+      &:not(:last-of-type) {
+        margin-bottom: 6.5rem;
+      }
+
+      span {
+        font-weight: 800;
+        font-size: 3.5rem;
+        line-height: 4.2rem;
+        text-align: right;
+        text-transform: uppercase;
+        color: var(--dark-green);
+      }
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+    max-width: 136rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    img {
+      width: 62.8rem;
+      height: 17rem;
+      transform: translateY(-4rem);
+    }
+
+    button {
+      align-self: flex-start;
+      padding: 2.2rem 6.61rem;
+      margin-left: 1.5rem;
+    }
+  }
+}

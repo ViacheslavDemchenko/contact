@@ -1,0 +1,23 @@
+.socials {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 2.5em;
+
+    a {
+      display: block;
+      width: 3.6rem;
+      height: 3.6rem;
+
+      img {
+        width: 3.6rem;
+        height: 3.6rem;
+      }
+    }
+  }
+}

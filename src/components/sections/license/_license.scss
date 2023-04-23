@@ -1,0 +1,146 @@
+.license {
+  padding: 18.8rem 0 14.9rem 0;
+
+  &__inner {
+    position: relative;
+    width: 100%;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -9rem;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.1);
+      filter: blur(10rem);
+      border-radius: 7.6rem;
+    }
+  }
+
+  &__form {
+    position: relative;
+    width: 100%;
+    max-width: 136rem;
+    margin: 0 auto 8.8rem auto;
+    padding: 4rem 0 4rem 55.6rem;
+    background: url("../img/icons/license-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    &::after,
+    &::before {
+      position: absolute;
+      z-index: 10;
+      content: "";
+    }
+
+    &::after {
+      left: 53rem;
+      top: -0.8rem;
+      width: 40.9rem;
+      height: 2rem;
+      background: url("../img/icons/line-green.svg") 100% 100%/cover no-repeat;
+    }
+
+    &::before {
+      right: 0;
+      top: -14rem;
+      width: 41.7rem;
+      height: 19.2rem;
+      background: url("../img/icons/license-text.svg") 100% 100%/cover no-repeat;
+    }
+
+    h2 {
+      margin-bottom: 2.9rem;
+      font-family: 'Apple SD Gothic Neo';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 5.2rem;
+      line-height: 6.2rem;
+      color: var(--white-main);
+    }
+
+    p {
+      font-family: 'Apple SD Gothic Neo';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+      color: var(--white-main);
+
+      &:nth-of-type(1) {
+        margin-bottom: 2.5rem;
+      }
+
+      &:nth-of-type(2) {
+        max-width: 56rem;
+        margin-bottom: 2.9rem;
+      }
+    }
+
+    &-phone {
+      display: inline-block;
+      margin-left: 3rem;
+      font-family: 'Apple SD Gothic Neo';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 4rem;
+      line-height: 4.8rem;
+      color: var(--dark-green);
+    }
+
+    &-policy {
+      font-family: 'Apple SD Gothic Neo';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      color: var(--white-main);
+      opacity: 0.5;
+    }
+
+    img {
+      position: absolute;
+      z-index: 10;
+      left: 8.6rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__form-fields {
+    max-width: 74.2rem;
+    display: flex;
+    margin-bottom: 3rem;
+
+    input {
+      width: 50%;
+      margin-right: 3rem;
+      padding: 2.2rem 4.45rem;
+      font-family: 'Apple SD Gothic Neo';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2.2rem;
+      line-height: 2.6rem;
+      color: var(--black-main);
+      border-radius: 1.5rem;
+      border: none;
+      outline: none;
+
+      &::placeholder {
+        font-family: 'Apple SD Gothic Neo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        color: var(--black-main);
+        opacity: 0.5;
+      }
+    }
+
+    button {
+      width: 50%;
+    }
+  }
+}

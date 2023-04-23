@@ -1,0 +1,51 @@
+// Переменные
+@import "./../scss/global/_variables";
+
+// Миксины
+@import "./../scss/global/_mixins";
+
+// Сброс дефолтных стилей браузера (дополнительный)
+@import "./../scss/global/_global";
+
+// Основные стили
+@import "./../scss/global/_base";
+
+// Размеры шрифтов повторяющихся элементов (h1, заголовки секций и т.д.)
+@import "./../scss/global/_typography";
+
+// Общие стили для кнопок
+@import "./../scss/global/_btns";
+
+// Общие стили для инпутов, чекбоксов и т.д.
+@import "./../scss/global/_inputs";
+
+// Общие стили для секций (паддинги и т.д.)
+@import "./../scss/global/_sections";
+
+// Плагины
+@import "./../scss/libs/swiper-bundle.min"; // Слайдер
+
+// Хедер
+@import "./../components/sections/header/_header";
+
+// Футер
+@import "./../components/sections/footer/_footer";
+
+// БЭМ-блоки
+// @import "./../components/bem-blocks/accordion/accordion"; // Аккордион
+// @import "./../components/bem-blocks/burger/burger"; // Бургер
+@import "./../components/bem-blocks/logo/_logo"; // Логотип
+@import "./../components/bem-blocks/nav/_nav"; // Меню
+@import "./../components/bem-blocks/socials/_socials";  // Соцсети
+// @import "./../components/bem-blocks/modal/modal"; // Модалки
+
+// Секции
+@import "./../components/sections/offer/_offer"; // Первая секция
+@import "./../components/sections/chop/_chop"; // Вторая секция
+@import "./../components/sections/gift/_gift"; // Третья секция
+@import "./../components/sections/rate/_rate"; // Четвертая секция
+@import "./../components/sections/question/_question"; // Пятая секция
+@import "./../components/sections/advantages/_advantages"; // Шестая секция
+@import "./../components/sections/license/_license"; // Седьмая секция
+@import "./../components/sections/thanks/_thanks"; // Восьмая секция
+@import "./../components/sections/questions-full/_questions-full"; // Девтая секция

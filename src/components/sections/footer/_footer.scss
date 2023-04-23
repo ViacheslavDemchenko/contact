@@ -1,0 +1,58 @@
+.footer {
+  padding: 4.9rem 0 4.2rem 0;
+  background: var(--black-main);
+
+  &__inner {
+    width: 100%;
+    max-width: 121.1rem;
+    display: flex;
+    justify-content: space-between;
+
+    &-left,
+    &-right {
+
+      span {
+        display: inline-block;
+        font-family: 'Apple SD Gothic Neo';
+        font-style: normal;
+        font-weight: 400;
+        color: var(--white-main);
+        opacity: 0.5;
+      }
+    }
+    
+    &-left {
+
+      span {
+        margin-top: 2.9rem;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+      }
+    }
+
+    &-right {
+
+      span {
+        margin-bottom: 1.6rem;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+      }
+    }
+  }
+
+  &__payment-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__payment-item {
+
+    &:noT(:last-of-type) {
+      margin-right: 1.5rem;
+    }
+
+    img {
+      opacity: 0.5;
+    }
+  }
+}

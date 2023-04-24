@@ -1,7 +1,5 @@
 .btn {
   text-align: center;
-  font-family: 'Apple SD Gothic Neo';
-  font-style: normal;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   outline: none;
@@ -10,7 +8,7 @@
 
   &--transparent {
     padding: 1.7rem 6.7rem;
-    font-weight: 400;
+    @include AppleSDGothicNeoRegular();
     font-size: 2rem;
     line-height: 2.4rem;
     color: var(--dark-green);
@@ -20,7 +18,7 @@
 
   &--green {
     padding: 2.2rem 2.5rem;
-    font-weight: 700;
+    @include AppleSDGothicNeoBold();
     font-size: 2.2rem;
     line-height: 2.6rem;
     color: var(--black-main);
@@ -30,15 +28,10 @@
   &--yellow {
     position: relative;
     padding: 1.7rem 6.7rem;
-    font-weight: 700;
+    @include AppleSDGothicNeoBold();
     font-size: 2rem;
     line-height: 2.4rem;
     color: #E8C300;
-    // background: linear-gradient(104.73deg, #E8C300 -1.85%, #F6FF8A 45.56%, #E8C300 107.17%);
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
-    // background-clip: text;
-    // text-fill-color: transparent;
     background: transparent;
     border: 0.1rem solid #E8C300;
   }

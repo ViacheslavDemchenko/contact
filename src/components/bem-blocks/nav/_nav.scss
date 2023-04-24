@@ -13,9 +13,7 @@ nav {
 
       a {
         padding: 0.5rem;
-        font-family: 'Apple SD Gothic Neo';
-        font-style: normal;
-        font-weight: 500;
+        @include AppleSDGothicNeoMedium();
         font-size: 1.8rem;
         line-height: 2.2rem;
         text-transform: uppercase;

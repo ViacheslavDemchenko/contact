@@ -14,9 +14,7 @@
 
     h2 {
       margin-bottom: 6.5rem;
-      font-family: 'Apple SD Gothic Neo';
-      font-style: normal;
-      font-weight: 800;
+      @include AppleSDGothicNeoExtraBold();
       font-size: 5.2rem;
       line-height: 6.2rem;
       color: var(--white-main);
@@ -54,18 +52,14 @@
 
     h3 {
       margin-bottom: 3rem;
-      font-family: 'Apple SD Gothic Neo';
-      font-style: normal;
-      font-weight: 700;
+      @include AppleSDGothicNeoBold();
       font-size: 3rem;
       line-height: 3.6rem;
       color: var(--white-main);
     }
 
     p {
-      font-family: 'Apple SD Gothic Neo';
-      font-style: normal;
-      font-weight: 300;
+      @include AppleSDGothicNeoLight();
       font-size: 2.2rem;
       line-height: 125%;
       color: var(--white-main);

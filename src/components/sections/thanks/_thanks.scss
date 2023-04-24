@@ -1,17 +1,18 @@
 .thanks {
   position: relative;
-  z-index: 0;
   overflow-x: hidden;
   padding: 3.2rem 0 16.3rem 0;
+  background: radial-gradient(52.7% 52.7% at 50% 50%, rgba(129, 121, 255, 0.4) 0%, rgba(63, 58, 148, 0) 100%);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__inner {
     width: 100%;
 
     h2 {
       margin-bottom: 6.9rem;
-      font-family: 'Apple SD Gothic Neo';
-      font-style: normal;
-      font-weight: 800;
+      @include AppleSDGothicNeoExtraBold();
       font-size: 5.2rem;
       line-height: 6.2rem;
       text-align: center;
@@ -19,86 +20,128 @@
     }
   }
 
-  .swipers {
-    position: relative;
-  }
-  
-  .swiper-wrap {
+  .slick-wrapper {
     width: 100%;
     max-width: 153.4rem;
     margin: 0 auto;
-    // overflow-x: hidden;
-    // overflow-y: auto;
+    // display: flex;
+    // justify-content: center;
+    // background-color: aqua;
   }
 
-  .swiper {
-    // width: 100%;
-    // max-width: 157.6rem;
-    // margin: 0 auto;
-    // height: 100%;
-    // margin-left: auto;
-    // margin-right: auto;
-  }
-
-  .swiper-wrapper {
+  .slick-slider {
     display: flex;
-    flex-direction: column;
-
-    &__top {
-      transform: translateX(-36rem);
-      display: flex;
-      margin-bottom: 4.2rem;
-    }
-
-    &__bottom {
-      display: flex;
-    }
+    justify-content: center;
   }
 
-  .swiper-slide {
-    width: 746px !important;
-    height: 303px;
+
+  .slide-item {
+    width: 74.6rem !important;
+    min-height: 30.3rem !important;
+    display: flex !important;
+    justify-content: space-between;
+    padding: 3.3rem 2.4rem 2.8rem 3.6rem;
+    // margin-right: 2.1rem;
     background: radial-gradient(49.58% 50% at 50% 50%, rgba(47, 43, 114, 0.4) 0%, rgba(48, 44, 116, 0) 100%), #201D54;
-    border: 1px solid #180D5B;
-    border-radius: 25px;
-    margin-right: 4.2rem;
+    border: 0.1rem solid #180D5B;
+    border-radius: 2.5rem;
+
+    &:nth-of-type(odd) {
+      margin-bottom: 4.3rem;
+      // margin-right: 2.1rem;
+    }
+
+    &__left {
+      max-width: 48.1rem;
+
+      .slide-item__title {
+        margin-bottom: 0.5rem;
+        @include AppleSDGothicNeoExtraBold();
+        font-size: 3rem;
+        line-height: 3.6rem;
+        color: var(--white-main);
+      }
+
+      .slide-item__text {
+        @include AppleSDGothicNeoRegular();
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+        color: var(--white-main);
+
+        &:not(:last-of-type) {
+          margin-bottom: 2rem;
+        }
+      }
+
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .slide-item__img {
+        margin-bottom: 1.2rem;
+        border-radius: 1.5rem;
+
+        img {
+          border-radius: 1.5rem;
+        }
+      }
+
+      .slide-item__name {
+        @include AppleChancery();
+        font-size: 2rem;
+        line-height: 3.2rem;
+        color: var(--white-main);
+      }
+    }
+  }
+  
+
+  .slick-arrow {
+    position: absolute;
+    z-index: 2; 
+    bottom: -9.3rem; 
+    width: 5rem; 
+    height: 5rem;
+    font-size: 0; 
+    border: 0.1rem solid var(--dark-green);
+    border-radius: 5.6rem;
+    background: transparent;
   }
 
-  .thanks__slider {
-    overflow-x: hidden;
-    overflow-y: auto;
-    padding-bottom: 8rem;
-    
-    .swiper-wrapper {
-      // transform: translate3d(-32rem, 0px, 0px);
-      margin-bottom: 4.2rem;
+  .slick-prev {
+    left: 52.5%;
+    transform: translateX(-52.5%);
+
+    &::after {
+      position: absolute;
+      z-index: 100;
+      content: ">";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1rem;
+      height: 1rem;
+      background: url('../img/icons/arrow.svg') 100% 100% / contain no-repeat;
     }
   }
 
-  // .thanks__slider-bottom {
-  //   // position: relative;
-  //   overflow-x: hidden;
-  //   overflow-y: auto;
+  .slick-next {
+    left: 47.5%;
+    transform: translateX(-47.5%) rotate(180deg);
 
-  //   // .swiper-wrapper {
-  //   //   transform: translate3d(4rem, 0px, 0px);
-  //   // }
-  // }
-
-  .swiper-buttons {
-    position: absolute;
-    z-index: 100;
-    bottom: -6.3rem;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #00E8AD;
-    border-radius: 56px;
-    transform: rotate(180deg);
+    &::after {
+      position: absolute;
+      z-index: 100;
+      content: "<";
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1rem;
+      height: 1rem;
+      background: url('../img/icons/arrow.svg') 100% 100% / contain no-repeat;
+    }
   }
 }

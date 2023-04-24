@@ -1,10 +1,45 @@
 /* FONTS */
 
-/* CenturyGothic */
+/* Apple SD Gothic Neo */
 
-// @mixin CenturyGothic ($font-family: 'Century Gothic', $font-weight: 700, $font-style: normal, $font-display: swap) {
-//     font-family: $font-family;
-//     font-weight: $font-weight;
-//     font-style: $font-style;
-//     font-display: $font-display;
-// }
+@mixin AppleSDGothicNeoLight($font-family: 'Apple SD Gothic Neo', $font-weight: 300, $font-style: normal, $font-display: swap) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: $font-display;
+}
+
+@mixin AppleSDGothicNeoRegular($font-family: 'Apple SD Gothic Neo', $font-weight: 400, $font-style: normal, $font-display: swap) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
+@mixin AppleSDGothicNeoMedium($font-family: 'Apple SD Gothic Neo', $font-weight: 500, $font-style: normal, $font-display: swap) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
+@mixin AppleSDGothicNeoBold($font-family: 'Apple SD Gothic Neo', $font-weight: 700, $font-style: normal, $font-display: swap) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
+@mixin AppleSDGothicNeoExtraBold($font-family: 'Apple SD Gothic Neo', $font-weight: 800, $font-style: normal, $font-display: swap) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-display: $font-display;
+}
+
+@mixin AppleChancery($font-family: 'Apple Chancery', $font-weight: 100, $font-style: italic, $font-display: swap) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-display: $font-display;
+}

@@ -1,14 +1,55 @@
 /* FONTS */
 
-/* @font-face {
-  font-family: 'Century Gothic';
-  src: url('../fonts/century-gothic/century-gothic.svg#CenturyGothic') format('svg'),
-       url('../fonts/century-gothic/century-gothic.ttf') format('truetype'),
-       url('../fonts/century-gothic/century-gothic.woff') format('woff'),
-       url('../fonts/century-gothic/century-gothic.eot'),
-       url('../fonts/century-gothic/century-gothic.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/century-gothic/century-gothic.woff2') format('woff2');
-  font-weight: normal;
+@font-face {
+  font-family: 'Apple SD Gothic Neo';
+  src: url('../fonts/AppleSDGothicNeoR00.woff2') format('woff2'),
+      url('../fonts/AppleSDGothicNeoR00.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
-} */
+}
+
+@font-face {
+  font-family: 'Apple SD Gothic Neo';
+  src: url('../fonts/AppleSDGothicNeoM00.woff2') format('woff2'),
+      url('../fonts/AppleSDGothicNeoM00.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Apple SD Gothic Neo';
+  src: url('../fonts/AppleSDGothicNeoL00.woff2') format('woff2'),
+      url('../fonts/AppleSDGothicNeoL00.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Apple SD Gothic Neo';
+  src: url('../fonts/AppleSDGothicNeoB00.woff2') format('woff2'),
+      url('../fonts/AppleSDGothicNeoB00.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Apple SD Gothic Neo';
+  src: url('../fonts/AppleSDGothicNeoEB00.woff2') format('woff2'),
+      url('../fonts/AppleSDGothicNeoEB00.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Apple Chancery';
+  src: url('../fonts/Apple-Chancery.woff2') format('woff2'),
+      url('../fonts/Apple-Chancery.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}

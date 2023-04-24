@@ -2,44 +2,81 @@ section.thanks
   .container 
     .thanks__inner 
       h2 Благодарности
-  .swipers
-    .swiper-wrap
-      .swiper.thanks__slider
-        .swiper-wrapper
-          .swiper-wrapper__top
-            .swiper-slide
-              img(src="./assets/img/icons/logo.svg" width="133" height="44" alt="Логотип группы компаний Контакт")
-            .swiper-slide
-              img(src="./assets/img/icons/logo.svg" width="133" height="44" alt="Логотип группы компаний Контакт")
-            .swiper-slide
-              img(src="./assets/img/icons/logo.svg" width="133" height="44" alt="Логотип группы компаний Контакт")
-            .swiper-slide
-              img(src="./assets/img/icons/logo.svg" width="133" height="44" alt="Логотип группы компаний Контакт")
-            .swiper-slide
-              img(src="./assets/img/icons/logo.svg" width="133" height="44" alt="Логотип группы компаний Контакт")
-          .swiper-wrapper__bottom
-            .swiper-slide
-              img(src="./assets/img/icons/logo.svg" width="133" height="44" alt="Логотип группы компаний Контакт")
-            .swiper-slide
-              img(src="./assets/img/icons/logo.svg" width="133" height="44" alt="Логотип группы компаний Контакт")
-            .swiper-slide
-              img(src="./assets/img/icons/logo.svg" width="133" height="44" alt="Логотип группы компаний Контакт")
-            .swiper-slide
-              img(src="./assets/img/icons/logo.svg" width="133" height="44" alt="Логотип группы компаний Контакт")
-        .swiper-buttons      
-          .swiper-button-next(rel="next")
-          .swiper-button-prev(rel="prev")
-    //- .swiper-wrap
-    //-   .swiper.thanks__slider-bottom
-    //-     .swiper-wrapper
-    //-       .swiper-slide
-    //-         img(src="./assets/img/icons/logo.svg" width="133" height="44" alt="Логотип группы компаний Контакт")
-    //-       .swiper-slide
-    //-         img(src="./assets/img/icons/logo.svg" width="133" height="44" alt="Логотип группы компаний Контакт")
-    //-       .swiper-slide
-    //-         img(src="./assets/img/icons/logo.svg" width="133" height="44" alt="Логотип группы компаний Контакт")
-    //-       .swiper-slide
-    //-         img(src="./assets/img/icons/logo.svg" width="133" height="44" alt="Логотип группы компаний Контакт")
-    //- .swiper-buttons
-    //-   .swiper-button-next(rel="next")
-    //-   .swiper-button-prev(rel="prev")
+  .slick-wrapper
+    #slick1.slick-slider
+      .slide-item
+        .slide-item__left
+          h3.slide-item__title Автошкола
+          p.slide-item__text Наняли ЧОП Контакт для охраны автопарка нашей автошколы. Нам дополнительно предложили переоборудовать КПП и 
+            | помещение врача. Директор предоставил смету с приятными цифрами от которых мы не смогли отказаться. Теперь все машины автопарка под надёжной охраной! 
+        .slide-item__right
+          .slide-item__img 
+            img(src="./assets/img/thanks-1.jpg" width="177" height="177" alt="Беспалов Вадим")
+          p.slide-item__name Беспалов Вадим
+      .slide-item
+        .slide-item__left
+          h3.slide-item__title Магазин одежды
+          p.slide-item__text Мы так рады, что обратились в Контакт, потому что раньше в магазине, своими силами пытались находить охранников, 
+            | объяснять что делать надо и всегда выходило всё боком. Директор Контакта лично взялся найти нам охранников, несколько раз приезжал 
+            | на их стажировку и теперь у нас сильный коллектив с отсутствием краж из зала.
+        .slide-item__right
+          .slide-item__img 
+            img(src="./assets/img/thanks-2.jpg" width="177" height="177" alt="Мали Наталья")
+          p.slide-item__name Мали Наталья
+      .slide-item
+        .slide-item__left
+          h3.slide-item__title Гаражный кооператив
+          p.slide-item__text Очень понравилось работать со специалистами из Контакта, потому что они за самую низкую цену на рынке провели монтаж 
+            | охранных систем, оборудовали место охранника на КПП и привели настоящих спецов. Теперь мы спокойны за сохранность имущества наших 
+            | автовладельцев.
+        .slide-item__right
+          .slide-item__img 
+            img(src="./assets/img/thanks-3.jpg" width="177" height="177" alt="Сергиенко Анатолий")
+          p.slide-item__name Сергиенко Анатолий
+      .slide-item
+        .slide-item__left
+          h3.slide-item__title Автошкола
+          p.slide-item__text Наняли ЧОП Контакт для охраны автопарка нашей автошколы. Нам дополнительно предложили переоборудовать КПП и помещение врача. 
+            | Директор предоставил смету с приятными цифрами от которых мы не смогли отказаться. Теперь все машины автопарка под надёжной охраной!
+        .slide-item__right
+          .slide-item__img 
+            img(src="./assets/img/thanks-1.jpg" width="177" height="177" alt="Беспалов Вадим")
+          p.slide-item__name Беспалов Вадим
+      .slide-item
+        .slide-item__left
+          h3.slide-item__title Промышленная стройка
+          p.slide-item__text Мы успешно запустили в Контактом 3 стройки и планируем в этом году ещё 2. Начальство из Контакта в короткие сроки 
+            | подбирает нам надёжных, проверенных бойцов, на которых мы рассчитываем. 
+          p.slide-item__text Всем рекомендую ГК Контакт!
+        .slide-item__right
+          .slide-item__img 
+            img(src="./assets/img/thanks-4.jpg" width="177" height="177" alt="Антонов Сергей")
+          p.slide-item__name Антонов Сергей
+      .slide-item
+        .slide-item__left
+          h3.slide-item__title Подземная парковка
+          p.slide-item__text Хотим выразить огромнейшую благодарность, за организацию безопасности нашей подземной парковки. Помимо охранника на 
+            | въезде, ребята в срочном порядке провели видеонаблюдение и пожарную сигнализацию. А самое приятное, что уложились в выделенный бюджет.
+        .slide-item__right
+          .slide-item__img 
+            img(src="./assets/img/thanks-5.jpg" width="177" height="177" alt="Ефимов Алексей")
+          p.slide-item__name Ефимов Алексей
+      .slide-item
+        .slide-item__left
+          h3.slide-item__title Товарищество жильцов
+          p.slide-item__text Большое спасибо Контакту, за то, что помогли всему ЖК найти порядочных консьержей в каждый подъезд. 
+          p.slide-item__text Все мужчины, все вежливые и услужливые. Жильцы безумно довольны проделанной работой! Рекомендую!
+        .slide-item__right
+          .slide-item__img 
+            img(src="./assets/img/thanks-6.jpg" width="177" height="177" alt="Пигеева Анастасия")
+          p.slide-item__name Пигеева Анастасия
+      .slide-item
+        .slide-item__left
+          h3.slide-item__title Промышленная стройка
+          p.slide-item__text Мы успешно запустили в Контактом 3 стройки и планируем в этом году ещё 2. Начальство из Контакта в короткие сроки 
+            | подбирает нам надёжных, проверенных бойцов, на которых мы рассчитываем. 
+          p.slide-item__text Всем рекомендую ГК Контакт!
+        .slide-item__right
+          .slide-item__img 
+            img(src="./assets/img/thanks-4.jpg" width="177" height="177" alt="Антонов Сергей")
+          p.slide-item__name Антонов Сергей

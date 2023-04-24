@@ -13,9 +13,7 @@
 
       span {
         display: inline-block;
-        font-family: 'Apple SD Gothic Neo';
-        font-style: normal;
-        font-weight: 400;
+        @include AppleSDGothicNeoRegular();
         color: var(--white-main);
         opacity: 0.5;
       }

@@ -162,6 +162,7 @@ footer {
 }
 
 .btn {
+  height: 6rem;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -171,7 +172,7 @@ footer {
 }
 
 .btn--transparent {
-  padding: 1.7rem 6.7rem;
+  padding: 2.3rem 6.7rem;
   font-family: "Apple SD Gothic Neo";
   font-weight: 400;
   font-style: normal;
@@ -184,7 +185,8 @@ footer {
 }
 
 .btn--green {
-  padding: 2.2rem 2.5rem;
+  height: 7rem;
+  padding: 2.7rem 2.5rem 2.2rem 2.5rem;
   font-family: "Apple SD Gothic Neo";
   font-weight: 700;
   font-style: normal;
@@ -196,8 +198,9 @@ footer {
 }
 
 .btn--yellow {
+  height: 7rem;
   position: relative;
-  padding: 1.7rem 6.7rem;
+  padding: 2.8rem 6.7rem 1.7rem 6.7rem;
   font-family: "Apple SD Gothic Neo";
   font-weight: 700;
   font-style: normal;
@@ -384,6 +387,10 @@ nav ul {
   align-items: center;
 }
 
+nav ul li {
+  height: 1.5rem;
+}
+
 nav ul li:not(:last-of-type) {
   margin-right: 2.64rem;
 }
@@ -528,7 +535,8 @@ nav ul li a {
   padding: 7.2rem 4.5rem;
 }
 
-.offer__counter span {
+.offer__counter p {
+  height: 6rem;
   font-family: "Apple SD Gothic Neo";
   font-weight: 400;
   font-style: normal;
@@ -540,8 +548,9 @@ nav ul li a {
   color: var(--white-main);
 }
 
-.offer__counter span:nth-of-type(odd) {
+.offer__counter p:nth-of-type(odd) {
   padding: 0.5rem 1.4rem;
+  line-height: 3.2rem;
   text-transform: uppercase;
   border: 0.1rem solid var(--dark-green);
   border-radius: 1.5rem;
@@ -757,7 +766,7 @@ nav ul li a {
 
 .gift__bottom button {
   align-self: flex-start;
-  padding: 2.2rem 6.61rem;
+  padding: 2.8rem 6.61rem 2.2rem 6.61rem;
   margin-left: 1.5rem;
 }
 
@@ -932,6 +941,7 @@ nav ul li a {
 }
 
 .rate__item-objects li {
+  height: 2.4rem;
   position: relative;
   font-family: "Apple SD Gothic Neo";
   font-weight: 300;
@@ -951,6 +961,11 @@ nav ul li a {
   width: 2.15rem;
   height: 0.1rem;
   background: var(--dark-green);
+}
+
+.rate__item button {
+  height: 7rem;
+  padding: 2.8rem 6.7rem 1.7rem 6.7rem;
 }
 
 .question {
@@ -1071,8 +1086,9 @@ nav ul li a {
 
 .question__form-fields input {
   width: 50%;
+  height: 7rem;
   margin-right: 3rem;
-  padding: 2.2rem 4.45rem;
+  padding: 2.8rem 4.45rem 2.2rem 4.45rem;
   font-family: "Apple SD Gothic Neo";
   font-weight: 400;
   font-style: normal;
@@ -1312,9 +1328,10 @@ nav ul li a {
 }
 
 .license__form-fields input {
+  height: 7rem;
   width: 50%;
   margin-right: 3rem;
-  padding: 2.2rem 4.45rem;
+  padding: 2.8rem 4.45rem 2.2rem 4.45rem;
   font-family: "Apple SD Gothic Neo";
   font-weight: 400;
   font-style: normal;
@@ -1449,8 +1466,6 @@ nav ul li a {
 }
 
 .thanks .slide-item__right .slide-item__img img {
-  width: 17.7rem;
-  height: 17.7rem;
   border-radius: 1.5rem;
 }
 
@@ -1620,9 +1635,10 @@ nav ul li a {
 }
 
 .questions-full__form-fields input {
+  height: 7rem;
   width: 50%;
   margin-right: 3rem;
-  padding: 2.2rem 4.45rem;
+  padding: 2.8rem 4.45rem 2.2rem 4.45rem;
   font-family: "Apple SD Gothic Neo";
   font-weight: 400;
   font-style: normal;

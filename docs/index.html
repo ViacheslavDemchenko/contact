@@ -34,10 +34,10 @@
             <div class="logo"><a href="index.html"><img src="./assets/img/icons/logo.svg" width="133" height="44" alt="Логотип группы компаний Контакт"></a></div>
             <nav class="nav">
               <ul role="menu">
-                <li role="menuitem"><a href="#services">Подарок</a></li>
-                <li role="menuitem"><a href="#price">Тарифы</a></li>
-                <li role="menuitem"><a href="#reviews">О нас</a></li>
-                <li role="menuitem"><a href="#photo">Напишите нам</a></li>
+                <li role="menuitem"><a href="#gift">Подарок</a></li>
+                <li role="menuitem"><a href="#rates">Тарифы</a></li>
+                <li role="menuitem"><a href="#about">О нас</a></li>
+                <li role="menuitem"><a href="#contacts">Напишите нам</a></li>
               </ul>
             </nav>
             <div class="socials">
@@ -46,7 +46,8 @@
                 <li class="socials__item"><a href="#!" target="_blank"><img src="./assets/img/icons/telegram.svg" width="36" height="36" alt="Телеграм"></a></li>
               </ul>
             </div>
-            <button class="btn btn--transparent">Заказать звонок</button>
+            <button class="cmn-toggle-switch cmn-toggle-switch__htx" id="menu__button"><span>toggle menu</span></button>
+            <button class="btn btn--transparent btn-header">Заказать звонок</button>
           </div>
         </div>
       </header>
@@ -68,11 +69,11 @@
             </div>
             <div class="offer__counter"> 
               <p>00</p>
-              <p>&nbsp : &nbsp</p>
+              <p>:</p>
               <p> 00</p>
-              <p>&nbsp : &nbsp</p>
+              <p>:</p>
               <p>00 </p>
-              <p>&nbsp дней</p><img src="./assets/img/icons/counter.svg" width="519" height="142" alt="">
+              <p>&nbsp дней</p><img src="./assets/img/icons/counter-xs.svg" width="294" height="86" alt=""><img src="./assets/img/icons/counter.svg" width="519" height="142" alt="">
             </div>
           </div>
         </section>
@@ -104,7 +105,7 @@
                   <p>Абонентская плата<span>0 руб.</span></p>
                 </div>
               </div>
-              <div class="gift__bottom"> <img src="./assets/img/icons/gift.svg" width="628" height="170" alt="">
+              <div class="gift__bottom"> <img src="./assets/img/icons/gift-xs.svg" width="263" height="96" alt=""><img src="./assets/img/icons/gift.svg" width="628" height="170" alt="">
                 <button class="btn btn--green">Скачать договор</button>
               </div>
             </div>
@@ -118,71 +119,80 @@
                 <div class="rate__item">
                   <h3>Тариф "Консьерж"</h3>
                   <p class="rate__item-price">от &nbsp<span>75 000 &nbsp</span>руб.</p>
-                  <ul class="rate__item-main">
-                    <li>Опыт: &nbsp<span>от 1 года</span></li>
-                    <li>Подготовка: &nbsp<span>базовая</span></li>
-                    <li>Полномочия: &nbsp<span>минимальные</span></li>
-                    <li>Спецсредства: &nbsp<span>нет</span></li>
-                  </ul>
-                  <h4>Функционал:</h4>
-                  <p>
-                    обходы и патрулирование территорий, работа со СКУД, взаимодействие с гос.органами, ведение документации, вызов Росгвардии, локализация техногенных инцидентов. Контролеры-администраторы не обладают полномочиями предотвращать кражи, досматривать сумки 
-                    и задерживать нарушителей. 
-                  </p>
-                  <h4>Кому подойдет:</h4>
-                  <ul class="rate__item-objects"> 
-                    <li>Офисы</li>
-                    <li>ЖК и ТСЖ</li>
-                    <li>Коттеджные поселки</li>
-                    <li>Салоны красоты</li>
-                    <li>Фитнес клубы</li>
-                  </ul>
-                  <button class="btn btn--transparent">Заказать</button>
+                  <div class="rate__item__inner">
+                    <ul class="rate__item-main">
+                      <li>Опыт: &nbsp<span>от 1 года</span></li>
+                      <li>Подготовка: &nbsp<span>базовая</span></li>
+                      <li>Полномочия: &nbsp<span>минимальные</span></li>
+                      <li>Спецсредства: &nbsp<span>нет</span></li>
+                    </ul>
+                    <h4>Функционал:</h4>
+                    <p>
+                      обходы и патрулирование территорий, работа со СКУД, взаимодействие с гос.органами, ведение документации, вызов Росгвардии, локализация техногенных инцидентов. Контролеры-администраторы не обладают полномочиями предотвращать кражи, досматривать сумки 
+                      и задерживать нарушителей. 
+                    </p>
+                    <h4>Кому подойдет:</h4>
+                    <ul class="rate__item-objects"> 
+                      <li>Офисы</li>
+                      <li>ЖК и ТСЖ</li>
+                      <li>Коттеджные поселки</li>
+                      <li>Салоны красоты</li>
+                      <li>Фитнес клубы</li>
+                    </ul>
+                    <button class="btn btn--transparent">Заказать</button>
+                  </div>
+                  <button class="btn btn-more btn-more--blue">Подробнее</button>
                 </div>
                 <div class="rate__item">
                   <h3>Тариф “Стандарт”</h3>
                   <p class="rate__item-price">от &nbsp<span>88 000 &nbsp</span>руб.</p>
-                  <ul class="rate__item-main">
-                    <li>Опыт: &nbsp<span>от 1 года</span></li>
-                    <li>Подготовка: &nbsp<span>хорошая </span></li>
-                    <li>Полномочия: &nbsp<span>полные </span></li>
-                    <li>Спецсредства: &nbsp<span>рации, дубинки и металлодетекторы </span></li>
-                  </ul>
-                  <h4>Функционал:</h4>
-                  <p>
-                    досмотр посетителей и сумок, предотвращение хищений, задержание преступников, обходы и патрулирование территорий, работа со СКУД, взаимодействие с гос.органами, ведение документации, вызов Росгвардии, локализация техногенных инцидентов.</p>
-                  <h4>Кому подойдет:</h4>
-                  <ul class="rate__item-objects"> 
-                    <li>Магазины</li>
-                    <li>ТЦ и ТРК </li>
-                    <li>Стройки </li>
-                    <li>Склады </li>
-                    <li>Бизнес-центры</li>
-                  </ul>
-                  <button class="btn btn--transparent">Заказать</button>
+                  <div class="rate__item__inner">
+                    <ul class="rate__item-main">
+                      <li>Опыт: &nbsp<span>от 1 года</span></li>
+                      <li>Подготовка: &nbsp<span>хорошая </span></li>
+                      <li>Полномочия: &nbsp<span>полные </span></li>
+                      <li>Спецсредства: &nbsp<span>рации, дубинки и металлодетекторы </span></li>
+                    </ul>
+                    <h4>Функционал:</h4>
+                    <p>
+                      досмотр посетителей и сумок, предотвращение хищений, задержание преступников, обходы и патрулирование территорий, работа со СКУД, взаимодействие с гос.органами, ведение документации, вызов Росгвардии, локализация техногенных инцидентов.</p>
+                    <h4>Кому подойдет:</h4>
+                    <ul class="rate__item-objects"> 
+                      <li>Магазины</li>
+                      <li>ТЦ и ТРК </li>
+                      <li>Стройки </li>
+                      <li>Склады </li>
+                      <li>Бизнес-центры</li>
+                    </ul>
+                    <button class="btn btn--transparent">Заказать</button>
+                  </div>
+                  <button class="btn btn-more btn-more--green">Подробнее</button>
                 </div>
                 <div class="rate__item">
                   <h3>Тариф “Премиум”</h3>
                   <p class="rate__item-price">от &nbsp<span>118 000 &nbsp</span>руб.</p>
-                  <ul class="rate__item-main">
-                    <li>Опыт: &nbsp<span>от 3 лет</span></li>
-                    <li>Подготовка: &nbsp<span>превосходная </span></li>
-                    <li>Полномочия: &nbsp<span>полные + оружие</span></li>
-                    <li>Спецсредства: &nbsp<span>рации, дубинки и металлодетекторы</span></li>
-                  </ul>
-                  <h4>Функционал:</h4>
-                  <p>
-                    такие охранники “победят” любого противника, создадут для вашего бизнеса внушительный внешний вид.  Мы лично занимаемся физической подготовкой бойцов, чтобы они всегда были в боевой готовности. </p>
-                  <h4>Кому подойдет:</h4>
-                  <ul class="rate__item-objects"> 
-                    <li>Ночные клубы</li>
-                    <li>Премиум салоны</li>
-                    <li>Фитнес-клубы </li>
-                    <li>Медицинские центры</li>
-                    <li>Бизнес-центры премиум класса </li>
-                    <li>Элитные магазины</li>
-                  </ul>
-                  <button class="btn btn--yellow">Заказать</button>
+                  <div class="rate__item__inner">
+                    <ul class="rate__item-main">
+                      <li>Опыт: &nbsp<span>от 3 лет</span></li>
+                      <li>Подготовка: &nbsp<span>превосходная </span></li>
+                      <li>Полномочия: &nbsp<span>полные + оружие</span></li>
+                      <li>Спецсредства: &nbsp<span>рации, дубинки и металлодетекторы</span></li>
+                    </ul>
+                    <h4>Функционал:</h4>
+                    <p>
+                      такие охранники “победят” любого противника, создадут для вашего бизнеса внушительный внешний вид.  Мы лично занимаемся физической подготовкой бойцов, чтобы они всегда были в боевой готовности. </p>
+                    <h4>Кому подойдет:</h4>
+                    <ul class="rate__item-objects"> 
+                      <li>Ночные клубы</li>
+                      <li>Премиум салоны</li>
+                      <li>Фитнес-клубы </li>
+                      <li>Медицинские центры</li>
+                      <li>Бизнес-центры премиум класса </li>
+                      <li>Элитные магазины</li>
+                    </ul>
+                    <button class="btn btn--yellow">Заказать</button>
+                  </div>
+                  <button class="btn btn-more btn-more--yellow">Подробнее</button>
                 </div>
               </div>
             </div>
@@ -206,7 +216,7 @@
         <section class="advantages">
           <div class="container"> 
             <div class="advantages__top">
-              <h2>Что скрывает занавес</h2><img src="./assets/img/icons/advantages.svg" width="578" height="242" alt="">
+              <h2>Что скрывает занавес</h2><img src="./assets/img/icons/advantages-xs.svg" width="182" height="142" alt=""><img src="./assets/img/icons/advantages.svg" width="578" height="242" alt="">
             </div>
             <div class="advantages__list"> 
               <div class="advantages__item">
@@ -377,6 +387,29 @@
             <div class="footer__inner">
               <div class="footer__inner-left">
                 <div class="logo"><a href="index.html"><img src="./assets/img/icons/logo.svg" width="133" height="44" alt="Логотип группы компаний Контакт"></a></div><span>© 2023 site.ru</span>
+                <div class="footer__mobile-text">
+                  <ul> 
+                    <li>Наш адрес:</li>
+                    <li>г. Москва, ул. Большая Тульская, 2</li>
+                    <li>пн-вс: с 08.00 до 22.00</li>
+                  </ul>
+                  <ul> 
+                    <li>Телефон:</li>
+                    <li>+7 (495) 885-72-22</li>
+                  </ul>
+                  <ul> 
+                    <li>Почта:</li>
+                    <li>sales2@kontaktchop.ru</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__mobile-socials"> 
+                <div class="socials">
+                  <ul class="socials__list">
+                    <li class="socials__item"><a href="#!" target="_blank"><img src="./assets/img/icons/whatsapp.svg" width="36" height="36" alt="Вотсап"></a></li>
+                    <li class="socials__item"><a href="#!" target="_blank"><img src="./assets/img/icons/telegram.svg" width="36" height="36" alt="Телеграм"></a></li>
+                  </ul>
+                </div><span>© 2023 site.ru</span>
               </div>
               <div class="footer__inner-right"> <span>Способы оплаты:</span>
                 <div class="footer__payment-list">
@@ -388,7 +421,6 @@
                   <div class="footer__payment-item"><img src="./assets/img/payment-6.png" width="84" height="54" alt=""></div>
                   <div class="footer__payment-item"><img src="./assets/img/payment-7.png" width="84" height="54" alt=""></div>
                   <div class="footer__payment-item"><img src="./assets/img/payment-8.png" width="84" height="54" alt=""></div>
-                  <div class="footer__payment-item"><img src="./assets/img/payment-9.png" width="84" height="54" alt=""></div>
                 </div>
               </div>
             </div>

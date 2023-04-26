@@ -1,68 +1,272 @@
 .advantages {
-  padding: 15.9rem 0 11.4rem 0;
-  background: radial-gradient(48.1% 14.67% at 50% 29.31%, rgba(152, 206, 255, 0.2) 0%, rgba(152, 206, 255, 0) 100%), radial-gradient(52.3% 14.74% at 50% 83.96%, rgba(152, 206, 255, 0.2) 0%, rgba(152, 206, 255, 0) 100%), radial-gradient(44.41% 31.46% at 50% 54.98%, rgba(152, 206, 255, 0.42) 0%, rgba(152, 206, 255, 0) 97.38%);
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  z-index: 100;
+  overflow-x: hidden;
+  padding: 3rem 0 3rem 0;
+
+  @media (min-width: 1024px) {
+    padding: 6rem 0 7rem 0;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 15.9rem 0 11.4rem 0;
+  }
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: -9rem;
+    // bottom: 0;
+    width: 100%;
+    height: 90%;
+    left: 0;
+    // right: 0;
+    background: radial-gradient(48.1% 14.67% at 50% 29.31%, rgba(152, 206, 255, 0.2) 0%, rgba(152, 206, 255, 0) 100%), radial-gradient(52.3% 14.74% at 50% 83.96%, rgba(152, 206, 255, 0.2) 0%, rgba(152, 206, 255, 0) 100%), radial-gradient(44.41% 31.46% at 50% 54.98%, rgba(152, 206, 255, 0.42) 0%, rgba(152, 206, 255, 0) 97.38%);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: 1440px) {
+      top: 1%;
+      left: 50%;
+      height: 88%;
+      transform: translateX(-50%);
+    }
+  }
 
   &__top{
+    position: relative;
     width: 100%;
-    max-width: 113rem;
-    margin: 0 auto;
+    max-width: 117rem;
+    // margin: 0 auto;
     display: flex;
     justify-content: space-between;
 
     h2 {
-      margin-bottom: 6.5rem;
+      // margin-bottom: 6.5rem;
+      // @include AppleSDGothicNeoExtraBold();
+      // font-size: 5.2rem;
+      // line-height: 6.2rem;
+      // color: var(--white-main);
+
+      max-width: 17.4rem;
+      margin: 0 0 3rem 0.5rem;
+      // margin: 0 auto 7.3rem auto;
       @include AppleSDGothicNeoExtraBold();
-      font-size: 5.2rem;
-      line-height: 6.2rem;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+      // text-align: center;
       color: var(--white-main);
+
+      @media (min-width: 500px) {
+        max-width: 19rem;
+        font-size: 2.8rem;
+        line-height: 3.3rem;
+      }
+
+      @media (min-width: 650px) {
+        font-size: 3rem;
+        line-height: 3.6rem;
+      }
+
+      @media (min-width: 750px) {
+        max-width: 35rem;
+      }
+
+      @media (min-width: 900px) {
+        font-size: 3.2rem;
+        line-height: 3.8rem;
+      }
+
+      @media (min-width: 1024px) {
+        max-width: 37rem;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+      }
+
+      @media (min-width: 1200px) {
+        max-width: 90.2rem;
+        margin-bottom: 15.5rem;
+        // margin: 0 auto 12.3rem auto;
+        font-size: 5.2rem;
+        line-height: 6.2rem;
+      }
     }
 
     img {
-      position: relative;
-      z-index: 10;
-      transform: translateY(-8.5rem);
+      // position: relative;
+      // z-index: 10;
+      // transform: translateY(-8.5rem);
+      // display: none;
+
+      &:nth-of-type(1) {
+        position: absolute;
+        top: -2rem;
+        width: 16rem;
+        left: 16rem;
+        // top: 5rem;
+        // width: 23rem;
+        // left: 16rem;
+        // transform: translateX(-50%);
+        display: block;
+
+        @media (min-width: 450px) {
+          width: 24rem;
+          left: 21rem;
+          top: -8rem;
+        }
+
+        @media (min-width: 500px) {
+          top: -10rem;
+          left: 26rem;
+          width: 27rem;
+        }
+
+        @media (min-width: 650px) {
+          display: none;
+        }
+      }
+
+      &:nth-of-type(2) {
+        display: none;
+
+        @media (min-width: 650px) {
+          position: absolute;
+          z-index: 10;
+          top: -4rem;
+          width: 37rem;
+          left: 28rem;
+          display: block;
+        }
+
+        @media (min-width: 750px) {
+          width: 41rem;
+          left: 40rem;
+          top: -9rem;
+        }
+
+        @media (min-width: 900px) {
+          width: 44rem;
+          left: 45rem;
+          top: -9rem;
+        }
+
+        @media (min-width: 1024px) {
+          width: 47rem;
+          left: 43rem;
+          top: -9.6rem;
+        }
+
+        @media (min-width: 1200px) {
+          left: 63.1rem;
+          top: -7.6rem;
+          width: 50rem;
+          height: 21.1rem;
+        }
+
+        @media (min-width: 1440px) {
+          left: 63.1rem;
+          top: -10.6rem;
+          width: 57.8rem;
+          height: 24.2rem;
+        }
+      }
     }
   }
 
   &__list {
-    transform: translateY(-11rem);
     width: 100%;
     max-width: 117rem;
     display: flex;
     flex-direction: column;
+
+    @media (min-width: 1200px) {
+      transform: translateY(-11rem);
+    }
   }
 
   &__item {
-    max-width: 113rem;
-    padding: 3.8rem 4.6rem 3.2rem 5rem;
+    width: 100%;
+    // max-width: 30rem;
+    padding: 1.7rem 1.4rem;
     border: 0.1rem solid #180D5B;
     border-radius: 2.5rem;
 
+    @media (min-width: 650px) {
+      padding: 2rem 1.8rem;
+    }
+
+    @media (min-width: 900px) {
+      padding: 2.5rem 2.2rem;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 113rem;
+      padding: 3.8rem 4.6rem 3.2rem 5rem;
+    }
+
     &:nth-of-type(odd) {
+      width: 95%;
       background: radial-gradient(49.58% 50% at 50% 50%, rgba(47, 43, 114, 0.4) 0%, rgba(48, 44, 116, 0) 100%), #201D54;
     }
 
     &:nth-of-type(even) {
+      width: 95%;
       align-self: flex-end;
       background: radial-gradient(49.58% 50% at 50% 50%, rgba(47, 43, 114, 0.4) 0%, rgba(48, 44, 116, 0) 100%), #161445;
     }
 
     h3 {
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
       @include AppleSDGothicNeoBold();
-      font-size: 3rem;
-      line-height: 3.6rem;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      overflow-wrap: break-word;
       color: var(--white-main);
+
+      @media (min-width: 500px) {
+        font-size: 2rem;
+        line-height: 2.3rem;
+      }
+
+      @media (min-width: 650px) {
+        margin-bottom: 1.5rem;
+        font-size: 2.2rem;
+      }
+
+      @media (min-width: 900px) {
+        line-height: 2.4rem;
+      }
+
+      @media (min-width: 1200px) {
+        margin-bottom: 3rem;
+        font-size: 3rem;
+        line-height: 3.6rem;
+      }
     }
 
     p {
       @include AppleSDGothicNeoLight();
-      font-size: 2.2rem;
+      font-size: 1.4rem;
       line-height: 125%;
       color: var(--white-main);
+
+      @media (min-width: 500px) {
+        font-size: 1.6rem;
+      }
+
+      @media (min-width: 650px) {
+        font-size: 1.8rem;
+      }
+
+      @media (min-width: 900px) {
+        line-height: 2rem;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 2.2rem;
+      }
     }
   }
 }

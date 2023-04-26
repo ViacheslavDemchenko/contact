@@ -350,19 +350,107 @@ if (window && window.NodeList && !NodeList.prototype.forEach) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/slider */ "./src/js/modules/slider.js");
+/* harmony import */ var _modules_mobileMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/mobileMenu */ "./src/js/modules/mobileMenu.js");
+/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/slider */ "./src/js/modules/slider.js");
+/* harmony import */ var _modules_rates__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/rates */ "./src/js/modules/rates.js");
 __webpack_require__(/*! polyfill-nodelist-foreach */ "./node_modules/polyfill-nodelist-foreach/index.js"); // Полифил для поддержки метода forEach в IE11+ и Safari9
 __webpack_require__(/*! svgxuse */ "./node_modules/svgxuse/svgxuse.js"); // Полифил для поддержки IE11+ и старыми браузерами использования SVG через use 
 
 // import accordion from './modules/accordion.js'; // Аккордион
-// import mobileMenu from './modules/mobileMenu'; // Мобильное меню
+ // Мобильное меню
 // import modal from './modules/modal'; // Модалки
  // Слайдер
 
+
 // accordion();
-// mobileMenu();
-// modal();
-Object(_modules_slider__WEBPACK_IMPORTED_MODULE_0__["default"])();
+Object(_modules_mobileMenu__WEBPACK_IMPORTED_MODULE_0__["default"])();
+Object(_modules_rates__WEBPACK_IMPORTED_MODULE_2__["default"])();
+Object(_modules_slider__WEBPACK_IMPORTED_MODULE_1__["default"])();
+
+/***/ }),
+
+/***/ "./src/js/modules/mobileMenu.js":
+/*!**************************************!*\
+  !*** ./src/js/modules/mobileMenu.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return mobileMenu; });
+function mobileMenu() {
+  var toggleBtn = document.querySelector('.cmn-toggle-switch__htx');
+  var navElement = document.querySelector('.nav');
+  var socialElement = document.querySelector('.socials');
+  toggleBtn.addEventListener('click', function () {
+    navElement.classList.toggle('nav--active');
+    socialElement.classList.toggle('socials--active');
+    toggleBtn.classList.toggle('active');
+  });
+}
+
+/***/ }),
+
+/***/ "./src/js/modules/rates.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/rates.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return rates; });
+function rates() {
+  // Функция, которая убирает класс rate__item--active у всех блоков
+  function removeActiveClassFromBlocks() {
+    var blocks = document.querySelectorAll('.rate__item');
+    blocks.forEach(function (block) {
+      block.classList.remove('rate__item--active');
+    });
+  }
+
+  // Функция, которая убирает класс rate__item__inner--active у всех элементов
+  function removeActiveClassFromInners() {
+    var inners = document.querySelectorAll('.rate__item__inner');
+    inners.forEach(function (inner) {
+      inner.classList.remove('rate__item__inner--active');
+    });
+  }
+
+  // Находим все кнопки с классом btn-more
+  var btnsMore = document.querySelectorAll('.btn-more');
+
+  // Обходим все найденные кнопки и вешаем на них обработчики события клика
+  btnsMore.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      // Скрываем кнопку, на которую кликнули
+      btn.style.display = 'none';
+
+      // Находим родительский блок для кнопки и добавляем ему класс rate__item--active с задержкой в 10 мс
+      var parentBlock = btn.closest('.rate__item');
+      setTimeout(function () {
+        parentBlock.classList.add('rate__item--active');
+      }, 10);
+
+      // Находим элемент rate__item__inner внутри родительского блока и добавляем ему класс rate__item__inner--active
+      var innerElement = parentBlock.querySelector('.rate__item__inner');
+      innerElement.classList.add('rate__item__inner--active');
+    });
+  });
+
+  // Вешаем обработчик на событие resize, чтобы показывать все кнопки с классом btn-more,
+  // если ширина окна становится больше определенного порога
+  window.addEventListener('resize', function () {
+    var btnsMore = document.querySelectorAll('.btn-more');
+    btnsMore.forEach(function (btn) {
+      btn.style.display = 'block';
+    });
+    removeActiveClassFromBlocks();
+    removeActiveClassFromInners();
+  });
+}
 
 /***/ }),
 
@@ -381,14 +469,40 @@ __webpack_require__.r(__webpack_exports__);
 
 function slider() {
   $('#slick1').slick({
-    rows: 2,
+    // rows: 2,
     dots: false,
     arrows: true,
     infinite: true,
     adaptiveHeight: true,
     speed: 300,
-    slidesToShow: 2,
-    slidesToScroll: 2
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+    // {
+    //   breakpoint: 1024,
+    //   settings: {
+    //     slidesToShow: 3,
+    //     slidesToScroll: 3,
+    //     infinite: true,
+    //     dots: true
+    //   }
+    // },
+    // {
+    //   breakpoint: 900,
+    //   settings: {
+    //     rows: 2,
+    //     slidesToShow: 2,
+    //     slidesToScroll: 2
+    //   }
+    // },
+    {
+      breakpoint: 320,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        rows: 1
+      }
+    }]
   });
 }
 

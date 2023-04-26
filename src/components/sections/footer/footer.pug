@@ -4,6 +4,20 @@ footer.footer
       .footer__inner-left
         include ./../../bem-blocks/logo/logo.pug
         span © 2023 site.ru
+        .footer__mobile-text
+          ul 
+            li Наш адрес:
+            li г. Москва, ул. Большая Тульская, 2
+            li пн-вс: с 08.00 до 22.00
+          ul 
+            li Телефон:
+            li +7 (495) 885-72-22
+          ul 
+            li Почта:
+            li sales2@kontaktchop.ru
+      .footer__mobile-socials 
+        include ./../../bem-blocks/socials/socials.pug
+        span © 2023 site.ru
       .footer__inner-right 
         span Способы оплаты:
         .footer__payment-list
@@ -23,5 +37,3 @@ footer.footer
             img(src="./assets/img/payment-7.png" width="84" height="54" alt="")
           .footer__payment-item
             img(src="./assets/img/payment-8.png" width="84" height="54" alt="")
-          .footer__payment-item
-            img(src="./assets/img/payment-9.png" width="84" height="54" alt="")

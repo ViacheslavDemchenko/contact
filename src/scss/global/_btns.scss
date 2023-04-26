@@ -18,14 +18,35 @@
   }
 
   &--green {
-    height: 7rem;
+    height: 4rem;
     // padding: 2.2rem 2.5rem;
-    padding: 2.7rem 2.5rem 2.2rem 2.5rem;
+    padding: 1.7rem 2.5rem 2.2rem 2.5rem;
     @include AppleSDGothicNeoBold();
-    font-size: 2.2rem;
-    line-height: 2.6rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
     color: var(--black-main);
     background: var(--dark-green);
+
+    @media (min-width: 750px) {
+      height: 5rem;
+      padding: 2rem 2.5rem 2.2rem 2.5rem;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+    }
+
+    @media (min-width: 1024px) {
+      height: 6rem;
+      padding: 2.3rem 2.5rem 2.2rem 2.5rem;
+      // font-size: 2.2rem;
+      // line-height: 2.6rem;
+    }
+
+    @media (min-width: 1200px) {
+      height: 7rem;
+      padding: 2.7rem 2.5rem 2.2rem 2.5rem;
+      font-size: 2.2rem;
+      line-height: 2.6rem;
+    }
   }
 
   &--yellow {

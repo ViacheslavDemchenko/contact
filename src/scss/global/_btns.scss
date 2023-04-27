@@ -1,5 +1,5 @@
 .btn {
-  height: 6rem;
+  // height: 6rem;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -18,9 +18,9 @@
   }
 
   &--green {
-    height: 4rem;
+    // height: 4rem;
     // padding: 2.2rem 2.5rem;
-    padding: 1.7rem 2.5rem 2.2rem 2.5rem;
+    padding: 1.4rem 2.5rem 1.4rem 2.5rem;
     @include AppleSDGothicNeoBold();
     font-size: 1.4rem;
     line-height: 1.7rem;
@@ -28,21 +28,21 @@
     background: var(--dark-green);
 
     @media (min-width: 750px) {
-      height: 5rem;
+      // height: 5rem;
       padding: 2rem 2.5rem 2.2rem 2.5rem;
       font-size: 1.6rem;
       line-height: 1.9rem;
     }
 
     @media (min-width: 1024px) {
-      height: 6rem;
+      // height: 6rem;
       padding: 2.3rem 2.5rem 2.2rem 2.5rem;
       // font-size: 2.2rem;
       // line-height: 2.6rem;
     }
 
     @media (min-width: 1200px) {
-      height: 7rem;
+      // height: 7rem;
       padding: 2.7rem 2.5rem 2.2rem 2.5rem;
       font-size: 2.2rem;
       line-height: 2.6rem;
@@ -50,7 +50,7 @@
   }
 
   &--yellow {
-    height: 7rem;
+    // height: 7rem;
     position: relative;
     // padding: 1.7rem 6.7rem;
     padding: 2.8rem 6.7rem 1.7rem 6.7rem;

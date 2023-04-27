@@ -265,7 +265,7 @@
       display: inline-block;
       margin-left: 3rem;
       @include AppleSDGothicNeoBold();
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       line-height: 2.4rem;
       color: var(--dark-green);
 
@@ -354,10 +354,10 @@
 
     input {
       width: 100%;
-      height: 4rem;
+      // height: 4rem;
       // margin-right: 3rem;
       margin-bottom: 1.5rem;
-      padding: 1.5rem 1.6rem 1.1rem 1.6rem;
+      padding: 1.4rem 1.6rem 1.4rem 1.6rem;
       // padding: 2.2rem 4.45rem;
       @include AppleSDGothicNeoRegular();
       font-size: 1.4rem;
@@ -368,7 +368,7 @@
       outline: none;
 
       @media (min-width: 750px) {
-        height: 5rem;
+        // height: 5rem;
         padding: 1.5rem 1.6rem 1.1rem 1.6rem;
         font-size: 1.6rem;
         line-height: 2.8rem;
@@ -379,11 +379,11 @@
       }
 
       @media (min-width: 1024px) {
-        height: 6rem;
+        // height: 6rem;
       }
 
       @media (min-width: 1200px) {
-        height: 7rem;
+        // height: 7rem;
         font-size: 2.2rem;
         line-height: 2.6rem;
       }

@@ -81,7 +81,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Apple SD Gothic Neo", "Arial", "Tahoma", sans-serif;
+  font-family: "AppleSDGothicNeoR", "Arial", "Tahoma", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-variant-numeric: lining-nums;
@@ -194,7 +194,6 @@ footer {
 }
 
 .btn {
-  height: 6rem;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -205,7 +204,7 @@ footer {
 
 .btn--transparent {
   padding: 2.3rem 6.7rem;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -217,8 +216,7 @@ footer {
 }
 
 .btn--green {
-  height: 4rem;
-  padding: 1.7rem 2.5rem 2.2rem 2.5rem;
+  padding: 1.4rem 2.5rem 1.4rem 2.5rem;
   font-family: "Apple SD Gothic Neo";
   font-weight: 700;
   font-style: normal;
@@ -230,7 +228,6 @@ footer {
 }
 
 .btn--yellow {
-  height: 7rem;
   position: relative;
   padding: 2.8rem 6.7rem 1.7rem 6.7rem;
   font-family: "Apple SD Gothic Neo";
@@ -413,8 +410,7 @@ footer {
 }
 
 .header .btn-header {
-  height: 4rem;
-  padding: 1.5rem 0.7rem 2.3rem 0.7rem !important;
+  padding: 1.5rem 0.7rem !important;
   font-size: 1.2rem;
   line-height: 1.5rem;
   border-radius: 0.75rem;
@@ -449,7 +445,7 @@ footer {
 .footer__inner-left span,
 .footer__inner-right span {
   display: inline-block;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -501,7 +497,7 @@ footer {
 }
 
 .footer__mobile-text ul li {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -697,7 +693,6 @@ footer {
 }
 
 .nav ul li {
-  height: 1.5rem;
   margin-bottom: 4rem;
 }
 
@@ -781,7 +776,7 @@ footer {
 }
 
 .offer__block h1 {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoSB";
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -892,8 +887,7 @@ footer {
 }
 
 .offer__counter p {
-  height: 3rem;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -910,20 +904,17 @@ footer {
   color: var(--white-main);
 }
 
-.offer__counter p:nth-of-type(even) {
-  height: 2rem;
-}
-
 .offer__counter p:nth-of-type(odd) {
-  padding: 0 0.4rem;
+  padding: 0.4rem 0.4rem;
   line-height: 2rem;
+  height: 3.4rem;
+  width: 3.4rem;
   text-transform: uppercase;
   border: 0.05rem solid var(--dark-green);
   border-radius: 0.75rem;
 }
 
 .offer__counter p:nth-of-type(6) {
-  height: 4rem;
   line-height: 3.3rem;
 }
 
@@ -998,7 +989,7 @@ footer {
 .chop__text h2 {
   margin-bottom: 1.5rem;
   text-align: center;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoSB";
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -1007,7 +998,7 @@ footer {
 }
 
 .chop__text p {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -1052,7 +1043,7 @@ footer {
 .gift__inner h2 {
   max-width: 62rem;
   margin: 0 auto 7.3rem auto;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoSB";
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -1116,7 +1107,7 @@ footer {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -1130,7 +1121,7 @@ footer {
 }
 
 .gift__text p span {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoSB";
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -1181,7 +1172,7 @@ footer {
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
-  padding: 2.2rem 6.61rem;
+  padding: 1.5rem 6.61rem;
 }
 
 .rate {
@@ -1209,7 +1200,7 @@ footer {
 
 .rate__inner h2 {
   margin: 0 0 3rem 0;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoSB";
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -1266,6 +1257,8 @@ footer {
   border-radius: 2.5rem;
   background-repeat: no-repeat;
   will-change: height;
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
 }
 
 .rate__item--active {
@@ -1389,7 +1382,7 @@ footer {
 
 .rate__item p {
   margin-bottom: 3rem;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -1404,9 +1397,8 @@ footer {
 }
 
 .rate__item-objects li {
-  height: 2.4rem;
   position: relative;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -1429,7 +1421,6 @@ footer {
 }
 
 .rate__item button {
-  height: 3.5rem;
   padding: 1.65rem 6.7rem 1.65rem 6.7rem;
   font-size: 1.1rem;
   line-height: 0.3rem;
@@ -1580,7 +1571,7 @@ footer {
 
 .question__form h2 {
   margin-bottom: 1.9rem;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoSB";
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -1590,7 +1581,7 @@ footer {
 }
 
 .question__form p {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -1616,7 +1607,7 @@ footer {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 2.4rem;
   color: var(--dark-green);
 }
@@ -1624,7 +1615,7 @@ footer {
 .question__form-policy {
   display: inline-block;
   text-align: center;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -1655,10 +1646,9 @@ footer {
 
 .question__form-fields input {
   width: 100%;
-  height: 4rem;
   margin-bottom: 1.5rem;
-  padding: 1.1rem 1.6rem 1.1rem 1.6rem;
-  font-family: "Apple SD Gothic Neo";
+  padding: 1.4rem 1.6rem 1.4rem 1.6rem;
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -1671,7 +1661,7 @@ footer {
 }
 
 .question__form-fields input::-webkit-input-placeholder {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -1682,7 +1672,7 @@ footer {
 }
 
 .question__form-fields input::-moz-placeholder {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -1693,7 +1683,7 @@ footer {
 }
 
 .question__form-fields input:-ms-input-placeholder {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -1704,7 +1694,7 @@ footer {
 }
 
 .question__form-fields input::-ms-input-placeholder {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -1715,7 +1705,7 @@ footer {
 }
 
 .question__form-fields input::placeholder {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -1768,7 +1758,7 @@ footer {
 .advantages__top h2 {
   max-width: 17.4rem;
   margin: 0 0 3rem 0.5rem;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoSB";
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -1838,7 +1828,7 @@ footer {
 }
 
 .advantages__item p {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -1927,7 +1917,7 @@ footer {
 
 .license__form h2 {
   margin-bottom: 1.9rem;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoSB";
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -1937,7 +1927,7 @@ footer {
 }
 
 .license__form p {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -1963,7 +1953,7 @@ footer {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 2.4rem;
   color: var(--dark-green);
 }
@@ -1971,7 +1961,7 @@ footer {
 .license__form-policy {
   display: inline-block;
   text-align: center;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -2002,10 +1992,9 @@ footer {
 
 .license__form-fields input {
   width: 100%;
-  height: 4rem;
   margin-bottom: 1.5rem;
-  padding: 1.1rem 1.6rem 1.1rem 1.6rem;
-  font-family: "Apple SD Gothic Neo";
+  padding: 1.4rem 1.6rem 1.4rem 1.6rem;
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2018,7 +2007,7 @@ footer {
 }
 
 .license__form-fields input::-webkit-input-placeholder {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2029,7 +2018,7 @@ footer {
 }
 
 .license__form-fields input::-moz-placeholder {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2040,7 +2029,7 @@ footer {
 }
 
 .license__form-fields input:-ms-input-placeholder {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2051,7 +2040,7 @@ footer {
 }
 
 .license__form-fields input::-ms-input-placeholder {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2062,7 +2051,7 @@ footer {
 }
 
 .license__form-fields input::placeholder {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2094,7 +2083,7 @@ footer {
 .thanks__inner h2 {
   margin-bottom: 1.5rem;
   text-align: center;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoSB";
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -2143,7 +2132,7 @@ footer {
 
 .thanks .slide-item__left .slide-item__title {
   margin-bottom: 0.5rem;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoSB";
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -2153,7 +2142,7 @@ footer {
 }
 
 .thanks .slide-item__left .slide-item__text {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2335,7 +2324,7 @@ footer {
 
 .questions-full__form h2 {
   margin-bottom: 1.9rem;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoSB";
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -2345,7 +2334,7 @@ footer {
 }
 
 .questions-full__form p {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -2371,7 +2360,7 @@ footer {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 2.4rem;
   color: var(--dark-green);
 }
@@ -2379,7 +2368,7 @@ footer {
 .questions-full__form-policy {
   display: inline-block;
   text-align: center;
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -2416,10 +2405,9 @@ footer {
 
 .questions-full__form-fields input {
   width: 100%;
-  height: 4rem;
   margin-bottom: 1.5rem;
-  padding: 1.5rem 1.6rem 1.1rem 1.6rem;
-  font-family: "Apple SD Gothic Neo";
+  padding: 1.4rem 1.6rem 1.4rem 1.6rem;
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2432,7 +2420,7 @@ footer {
 }
 
 .questions-full__form-fields input::-webkit-input-placeholder {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2443,7 +2431,7 @@ footer {
 }
 
 .questions-full__form-fields input::-moz-placeholder {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2454,7 +2442,7 @@ footer {
 }
 
 .questions-full__form-fields input:-ms-input-placeholder {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2465,7 +2453,7 @@ footer {
 }
 
 .questions-full__form-fields input::-ms-input-placeholder {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2476,7 +2464,7 @@ footer {
 }
 
 .questions-full__form-fields input::placeholder {
-  font-family: "Apple SD Gothic Neo";
+  font-family: "AppleSDGothicNeoR";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2536,12 +2524,7 @@ footer {
     margin-right: auto;
   }
 
-  .offer__counter p:nth-of-type(even) {
-    height: 2rem;
-  }
-
   .offer__counter p:nth-of-type(6) {
-    height: 3rem;
     line-height: 2.4rem;
   }
 
@@ -2660,10 +2643,10 @@ footer {
   }
 
   .offer__counter p:nth-of-type(odd) {
-    height: 5rem;
-    padding: 1rem 1.2rem;
+    height: 4rem;
+    width: 4rem;
     font-size: 2.4rem;
-    line-height: 1.7rem;
+    line-height: 2.4rem;
   }
 
   .offer__counter img:nth-of-type(1) {
@@ -2733,6 +2716,7 @@ footer {
   }
 
   .rate__item button {
+    padding: 2rem 6.7rem 2rem 6.7rem;
     font-size: 1.4rem;
   }
 
@@ -2933,7 +2917,6 @@ footer {
 
 @media (min-width: 750px) {
   .btn--green {
-    height: 5rem;
     padding: 2rem 2.5rem 2.2rem 2.5rem;
     font-size: 1.6rem;
     line-height: 1.9rem;
@@ -2970,16 +2953,14 @@ footer {
     max-width: 32rem;
   }
 
-  .offer__counter p:nth-of-type(even) {
-    height: 2rem;
-  }
-
   .offer__counter p:nth-of-type(odd) {
+    height: 4.6rem;
+    width: 4.6rem;
     font-size: 2.8rem;
+    line-height: 3rem;
   }
 
   .offer__counter p:nth-of-type(6) {
-    height: 3rem;
     font-size: 2.8rem;
     margin: 0;
   }
@@ -3040,13 +3021,8 @@ footer {
   }
 
   .rate__item button {
-    height: 4.5rem;
     font-size: 1.6rem;
-    padding: 2.2rem 6.7rem 1.65rem 6.7rem;
-  }
-
-  .btn-more {
-    height: 3.5rem;
+    padding: 2.2rem 6.7rem 2.2rem 6.7rem;
   }
 
   .question__form h2 {
@@ -3078,7 +3054,6 @@ footer {
   }
 
   .question__form-fields input {
-    height: 5rem;
     padding: 1.5rem 1.6rem 1.1rem 1.6rem;
     font-size: 1.6rem;
     line-height: 2.8rem;
@@ -3148,7 +3123,6 @@ footer {
   }
 
   .license__form-fields input {
-    height: 5rem;
     padding: 1.5rem 1.6rem 1.1rem 1.6rem;
     font-size: 1.6rem;
     line-height: 2.8rem;
@@ -3213,7 +3187,6 @@ footer {
   }
 
   .questions-full__form-fields input {
-    height: 5rem;
     padding: 1.5rem 1.6rem 1.1rem 1.6rem;
     font-size: 1.6rem;
     line-height: 2.8rem;
@@ -3581,7 +3554,6 @@ footer {
   }
 
   .btn--green {
-    height: 6rem;
     padding: 2.3rem 2.5rem 2.2rem 2.5rem;
   }
 
@@ -3622,7 +3594,6 @@ footer {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
-    height: 6rem;
     padding: 2.3rem 6.7rem !important;
   }
 
@@ -3711,7 +3682,6 @@ footer {
   }
 
   .offer__counter p {
-    height: 6rem;
     font-size: 4rem;
     line-height: 1.5rem;
   }
@@ -3722,7 +3692,10 @@ footer {
   }
 
   .offer__counter p:nth-of-type(odd) {
-    line-height: 1.6rem;
+    height: 5.6rem;
+    width: 5.6rem;
+    padding: 0.4rem 1rem;
+    line-height: 3.8rem;
     border: 0.1rem solid var(--dark-green);
     border-radius: 1.5rem;
   }
@@ -3865,9 +3838,8 @@ footer {
   }
 
   .rate__item button {
-    height: 5.5rem;
     font-size: 2rem;
-    padding: 2.8rem 6.7rem 1.7rem 6.7rem;
+    padding: 2.5rem 6.7rem 2.5rem 6.7rem;
   }
 
   .rate__item__inner {
@@ -3914,10 +3886,6 @@ footer {
 
   .question__form-fields {
     max-width: 59rem;
-  }
-
-  .question__form-fields input {
-    height: 6rem;
   }
 
   .advantages {
@@ -3986,10 +3954,6 @@ footer {
     max-width: 59rem;
   }
 
-  .license__form-fields input {
-    height: 6rem;
-  }
-
   .thanks .slide-item {
     width: 100% !important;
     -webkit-box-orient: horizontal;
@@ -4052,15 +4016,10 @@ footer {
   .questions-full__form-fields {
     max-width: 59rem;
   }
-
-  .questions-full__form-fields input {
-    height: 6rem;
-  }
 }
 
 @media (min-width: 1200px) {
   .btn--green {
-    height: 7rem;
     padding: 2.7rem 2.5rem 2.2rem 2.5rem;
     font-size: 2.2rem;
     line-height: 2.6rem;
@@ -4124,8 +4083,7 @@ footer {
 
   .offer__counter p:nth-of-type(odd) {
     padding: 1rem 1rem;
-    height: 6rem;
-    line-height: 2.3rem;
+    line-height: 2.8rem;
   }
 
   .offer__counter p:nth-of-type(6) {
@@ -4250,13 +4208,10 @@ footer {
   }
 
   .rate__item button {
-    height: 7rem;
-    padding: 2.8rem 6.7rem 1.7rem 6.7rem;
     font-size: 2.2rem;
   }
 
   .question__form-fields input {
-    height: 7rem;
     font-size: 2.2rem;
     line-height: 2.6rem;
   }
@@ -4338,7 +4293,6 @@ footer {
   }
 
   .license__form-fields input {
-    height: 7rem;
     font-size: 2.2rem;
     line-height: 2.6rem;
   }
@@ -4404,7 +4358,6 @@ footer {
   }
 
   .questions-full__form-fields input {
-    height: 7rem;
     font-size: 2.2rem;
     line-height: 2.6rem;
   }
@@ -4488,6 +4441,13 @@ footer {
 
   .offer__text {
     margin: 0 0 10.5rem 5rem;
+  }
+
+  .offer__counter p:nth-of-type(odd) {
+    height: 6.6rem;
+    width: 6.6rem;
+    padding: 1rem 1.5rem;
+    line-height: 3.8rem;
   }
 
   .gift__block {

@@ -69,8 +69,8 @@
   }
 
   .btn-header {
-    height: 4rem;
-    padding: 1.5rem 0.7rem 2.3rem 0.7rem !important;
+    // height: 4rem;
+    padding: 1.5rem 0.7rem !important;
     font-size: 1.2rem;
     line-height: 1.5rem;
     border-radius: 0.75rem;
@@ -87,7 +87,7 @@
     @media (min-width: 1024px) {
       position: static;
       transform: translateX(0);
-      height: 6rem;
+      // height: 6rem;
       padding: 2.3rem 6.7rem !important;
     }
 

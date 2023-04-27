@@ -125,7 +125,7 @@
     margin: 0;
     border-radius: 2.5rem;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
     will-change: height;
     // transition: height 0.5s ease-in-out;
 
@@ -188,13 +188,13 @@
     &:nth-of-type(1) {
       background: url("../img/icons/rate-1-xs.svg");
       background-repeat: no-repeat;
-      background-size: 100% 100%;
+      // background-size: 100% 100%;
       background-position: 0 0;
 
       @media (min-width: 500px) {
         background: url("../img/icons/rate-1.svg");
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        // background-size: 100% 100%;
         background-position: 0 0;
       }
 
@@ -211,13 +211,13 @@
       z-index: 100;
       background: url("../img/icons/rate-2-xs.svg");
       background-repeat: no-repeat;
-      background-size: 100% 100%;
+      // background-size: 100% 100%;
       background-position: 0 0;
 
       @media (min-width: 500px) {
         background: url("../img/icons/rate-2.svg");
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        // background-size: 100% 100%;
         background-position: 0 0;
       }
 
@@ -233,13 +233,13 @@
     &:nth-of-type(3) {
       background: url("../img/icons/rate-3-xs.svg");
       background-repeat: no-repeat;
-      background-size: 100% 100%;
+      // background-size: 100% 100%;
       background-position: 0 0;
 
       @media (min-width: 500px) {
         background: url("../img/icons/rate-3.svg");
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        // background-size: 100% 100%;
         background-position: 0 0;
       }
 

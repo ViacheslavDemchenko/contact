@@ -2,7 +2,8 @@ header.header
   .container 
     .header__inner
       include ./../../bem-blocks/logo/logo.pug
-      include ./../../bem-blocks/nav/nav.pug
-      include ./../../bem-blocks/socials/socials.pug
+      .header__inner-mobile-wrap
+        include ./../../bem-blocks/nav/nav.pug
+        include ./../../bem-blocks/socials/socials.pug
       include ./../../bem-blocks/burger/burger.pug
       button.btn.btn--transparent.btn-header Заказать звонок

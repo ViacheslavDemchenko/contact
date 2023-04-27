@@ -1,17 +1,15 @@
 export default function rates() {
-  // Функция, которая убирает класс rate__item--active у всех блоков
-  function removeActiveClassFromBlocks() {
+  // Функция, которая убирает класс rate__item--active у всех блоков, кроме указанного
+  function removeActiveClassFromBlocks(activeBlock) {
     const blocks = document.querySelectorAll('.rate__item');
     blocks.forEach((block) => {
-      block.classList.remove('rate__item--active');
-    });
-  }
-
-  // Функция, которая убирает класс rate__item__inner--active у всех элементов
-  function removeActiveClassFromInners() {
-    const inners = document.querySelectorAll('.rate__item__inner');
-    inners.forEach((inner) => {
-      inner.classList.remove('rate__item__inner--active');
+      if (block !== activeBlock) {
+        block.classList.remove('rate__item--active');
+        const innerElement = block.querySelector('.rate__item__inner');
+        innerElement.classList.remove('rate__item__inner--active');
+        const btnMore = block.querySelector('.btn-more');
+        btnMore.style.display = 'block';
+      }
     });
   }
 
@@ -21,13 +19,13 @@ export default function rates() {
   // Обходим все найденные кнопки и вешаем на них обработчики события клика
   btnsMore.forEach((btn) => {
     btn.addEventListener('click', () => {
-      // Скрываем кнопку, на которую кликнули
       btn.style.display = 'none';
 
       // Находим родительский блок для кнопки и добавляем ему класс rate__item--active с задержкой в 10 мс
       const parentBlock = btn.closest('.rate__item');
       setTimeout(() => {
         parentBlock.classList.add('rate__item--active');
+        removeActiveClassFromBlocks(parentBlock);
       }, 10);
 
       // Находим элемент rate__item__inner внутри родительского блока и добавляем ему класс rate__item__inner--active
@@ -44,8 +42,14 @@ export default function rates() {
       btn.style.display = 'block';
     });
 
-    removeActiveClassFromBlocks();
-    removeActiveClassFromInners();
+    const blocks = document.querySelectorAll('.rate__item');
+    blocks.forEach((block) => {
+      block.classList.remove('rate__item--active');
+      const innerElement = block.querySelector('.rate__item__inner');
+      innerElement.classList.remove('rate__item__inner--active');
+      const btnMore = block.querySelector('.btn-more');
+      btnMore.style.display = 'block';
+    });
   });
 
 }

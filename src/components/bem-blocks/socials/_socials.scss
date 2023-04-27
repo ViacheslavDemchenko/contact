@@ -1,23 +1,23 @@
 .socials {
   // display: none;
-  position: absolute;
-  z-index: 7500;
-  bottom: 49rem;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  will-change: opacity;
-  transition: opacity 1s ease-in-out;
+  // position: absolute;
+  // z-index: 7500;
+  // bottom: 49rem;
+  // left: 50%;
+  // transform: translateX(-50%);
+  // opacity: 0;
+  // will-change: opacity;
+  // transition: opacity 1s ease-in-out;
 
-  &--active {
-    opacity: 1;
-  }
+  // &--active {
+  //   opacity: 1;
+  // }
 
-  @media (min-width: 1024px) {
-    position: static;
-    transform: translateX(0);
-    opacity: 1;
-  }
+  // @media (min-width: 1024px) {
+  //   position: static;
+  //   transform: translateX(0);
+  //   opacity: 1;
+  // }
 
   &__list {
     display: flex;

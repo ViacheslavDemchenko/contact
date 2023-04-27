@@ -381,11 +381,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return mobileMenu; });
 function mobileMenu() {
   var toggleBtn = document.querySelector('.cmn-toggle-switch__htx');
-  var navElement = document.querySelector('.nav');
-  var socialElement = document.querySelector('.socials');
+  var navElement = document.querySelector('.header__inner-mobile-wrap');
+  // const socialElement = document.querySelector('.socials');
+
   toggleBtn.addEventListener('click', function () {
-    navElement.classList.toggle('nav--active');
-    socialElement.classList.toggle('socials--active');
+    navElement.classList.toggle('header__inner-mobile-wrap--active');
+    // socialElement.classList.toggle('socials--active');
     toggleBtn.classList.toggle('active');
   });
 }
@@ -403,19 +404,17 @@ function mobileMenu() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return rates; });
 function rates() {
-  // Функция, которая убирает класс rate__item--active у всех блоков
-  function removeActiveClassFromBlocks() {
+  // Функция, которая убирает класс rate__item--active у всех блоков, кроме указанного
+  function removeActiveClassFromBlocks(activeBlock) {
     var blocks = document.querySelectorAll('.rate__item');
     blocks.forEach(function (block) {
-      block.classList.remove('rate__item--active');
-    });
-  }
-
-  // Функция, которая убирает класс rate__item__inner--active у всех элементов
-  function removeActiveClassFromInners() {
-    var inners = document.querySelectorAll('.rate__item__inner');
-    inners.forEach(function (inner) {
-      inner.classList.remove('rate__item__inner--active');
+      if (block !== activeBlock) {
+        block.classList.remove('rate__item--active');
+        var innerElement = block.querySelector('.rate__item__inner');
+        innerElement.classList.remove('rate__item__inner--active');
+        var btnMore = block.querySelector('.btn-more');
+        btnMore.style.display = 'block';
+      }
     });
   }
 
@@ -425,13 +424,13 @@ function rates() {
   // Обходим все найденные кнопки и вешаем на них обработчики события клика
   btnsMore.forEach(function (btn) {
     btn.addEventListener('click', function () {
-      // Скрываем кнопку, на которую кликнули
       btn.style.display = 'none';
 
       // Находим родительский блок для кнопки и добавляем ему класс rate__item--active с задержкой в 10 мс
       var parentBlock = btn.closest('.rate__item');
       setTimeout(function () {
         parentBlock.classList.add('rate__item--active');
+        removeActiveClassFromBlocks(parentBlock);
       }, 10);
 
       // Находим элемент rate__item__inner внутри родительского блока и добавляем ему класс rate__item__inner--active
@@ -447,8 +446,14 @@ function rates() {
     btnsMore.forEach(function (btn) {
       btn.style.display = 'block';
     });
-    removeActiveClassFromBlocks();
-    removeActiveClassFromInners();
+    var blocks = document.querySelectorAll('.rate__item');
+    blocks.forEach(function (block) {
+      block.classList.remove('rate__item--active');
+      var innerElement = block.querySelector('.rate__item__inner');
+      innerElement.classList.remove('rate__item__inner--active');
+      var btnMore = block.querySelector('.btn-more');
+      btnMore.style.display = 'block';
+    });
   });
 }
 

@@ -12,19 +12,23 @@
   &__text {
     position: relative;
     width: 100%;
-    max-width: 113rem;
+    max-width: 128rem;
     padding: 2.2rem 1.5rem 2.8rem 1.5rem;
     background: url("../img/icons/chop-bg-xs.svg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
     background-position: 0 0;
+    background-size: cover;
 
     @media (min-width: 1024px) {
       padding: 6.9rem 6.2rem 8.3rem 6.2rem;
+
+    }
+
+    @media (min-width: 1440px) {
       background: url("../img/icons/chop-bg.svg");
       background-repeat: no-repeat;
-      background-size: 100% 100%;
       background-position: 0 0;
+      background-size: cover;
     }
 
 

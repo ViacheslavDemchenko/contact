@@ -8,7 +8,7 @@
     padding: 10rem 0 8rem 0;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1440px) {
     padding: 4.1rem 0 11rem 0;
   }
 
@@ -65,7 +65,8 @@
     padding: 1.3rem 1.5rem 1.2rem 1.5rem;
     background: url("../img/icons/question-1-xs.svg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-position: 0 0;
+    background-size: cover;
 
     // position: relative;
     // width: 100%;
@@ -77,26 +78,33 @@
     // background-size: 100% 100%;
 
     @media (min-width: 900px) {
-      align-items: flex-start;
+      align-items: center;
       padding: 5rem 3.5rem 3rem 5rem;
       margin: 0 auto 8.8rem auto;
-      background: url("../img/icons/question-1.svg");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
+      // background: url("../img/icons/question-1.svg");
+      // background-repeat: no-repeat;
+      // background-position: 0 0;
+      // background-size: cover;
     }
 
     @media (min-width: 1024px) {
       max-width: 100rem;
-      padding: 5rem 0 4rem 10rem;
+      // padding: 5rem 0 4rem 10rem;
     }
 
     @media (min-width: 1200px) {
       max-width: 117rem;
-      padding: 5.2rem 0 4rem 9.5rem;
+      // padding: 5.2rem 0 4rem 9.5rem;
     }
 
     @media (min-width: 1440px) {
-      max-width: 136rem;
+      align-items: flex-start;
+      // max-width: 136rem;
+      padding: 5.2rem 0 8rem 9.5rem;
+      background: url("../img/icons/question-full-bg.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      // background-size: cover;
       // padding: 12.7rem 0 4rem 9.5rem;
     }
 
@@ -247,7 +255,7 @@
 
         @media (min-width: 900px) {
           max-width: 43rem;
-          text-align: left;
+          // text-align: left;
         }
 
         @media (min-width: 1200px) {
@@ -257,6 +265,7 @@
         @media (min-width: 1440px) {
           max-width: 100%;
           // margin-bottom: 2.9rem;
+          text-align: left;
         }
       }
     }
@@ -376,6 +385,7 @@
 
       @media (min-width: 900px) {
         margin-right: 3rem;
+        margin-bottom: 0;
       }
 
       @media (min-width: 1024px) {

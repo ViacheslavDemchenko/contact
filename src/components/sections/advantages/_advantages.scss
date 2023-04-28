@@ -2,15 +2,15 @@
   position: relative;
   z-index: 100;
   overflow-x: hidden;
-  padding: 3rem 0 3rem 0;
+  padding: 7rem 0 3rem 0;
 
-  @media (min-width: 1024px) {
-    padding: 6rem 0 7rem 0;
+  @media (min-width: 750px) {
+    padding: 10rem 0 5rem 0;
   }
 
-  @media (min-width: 1024px) {
-    padding: 15.9rem 0 11.4rem 0;
-  }
+  // @media (min-width: 1024px) {
+  //   padding: 5rem 0 11.4rem 0;
+  // }
 
   &::after {
     position: absolute;
@@ -117,11 +117,11 @@
           top: -8rem;
         }
 
-        @media (min-width: 500px) {
-          top: -10rem;
-          left: 26rem;
-          width: 27rem;
-        }
+        // @media (min-width: 500px) {
+        //   top: -10rem;
+        //   left: 26rem;
+        //   width: 27rem;
+        // }
 
         @media (min-width: 650px) {
           display: none;
@@ -141,9 +141,9 @@
         }
 
         @media (min-width: 750px) {
-          width: 41rem;
-          left: 40rem;
-          top: -9rem;
+          width: 37rem;
+          left: 38rem;
+          top: -8rem;
         }
 
         @media (min-width: 900px) {

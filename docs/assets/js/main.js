@@ -382,12 +382,23 @@ __webpack_require__.r(__webpack_exports__);
 function mobileMenu() {
   var toggleBtn = document.querySelector('.cmn-toggle-switch__htx');
   var navElement = document.querySelector('.header__inner-mobile-wrap');
-  // const socialElement = document.querySelector('.socials');
-
+  var links = document.querySelectorAll('.nav ul li a');
   toggleBtn.addEventListener('click', function () {
     navElement.classList.toggle('header__inner-mobile-wrap--active');
-    // socialElement.classList.toggle('socials--active');
     toggleBtn.classList.toggle('active');
+  });
+  links.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      navElement.classList.remove('header__inner-mobile-wrap--active');
+      toggleBtn.classList.remove('active');
+      var href = this.getAttribute('href');
+      var offsetTop = document.querySelector(href).offsetTop;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+    });
   });
 }
 

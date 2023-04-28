@@ -33,6 +33,7 @@
 
   &__form {
     position: relative;
+    z-index: 100;
     width: 100%;
     max-width: 100rem;
     display: flex;
@@ -42,20 +43,27 @@
     padding: 1.3rem 1.5rem 1.2rem 1.5rem;
     background: url("../img/icons/question-1-xs.svg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-position: 0 0;
+    background-size: cover;
 
     @media (min-width: 900px) {
-      align-items: flex-start;
+      align-items: center;
       padding: 3rem 3.5rem 3rem 6rem;
       margin: 0 auto 8.8rem auto;
-      background: url("../img/icons/question-1.svg");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
+      // background: url("../img/icons/question-1.svg");
+      // background-repeat: no-repeat;
+      // background-position: 0 0;
+      // background-size: cover;
     }
 
     @media (min-width: 1440px) {
       max-width: 136rem;
       padding: 4rem 0 4rem 9.4rem;
+      align-items: flex-start;
+      background: url("../img/icons/question-1.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
     }
 
     &::after,
@@ -189,12 +197,13 @@
 
         @media (min-width: 900px) {
           max-width: 43rem;
-          text-align: left;
+          // text-align: left;
         }
 
         @media (min-width: 1440px) {
           max-width: 56rem;
           margin-bottom: 2.9rem;
+          text-align: left;
         }
       }
     }
@@ -266,26 +275,36 @@
       // bottom: 0;
 
       @media (min-width: 900px) {
-        position: absolute;
-        right: -0.3rem;
-        bottom: -0.1rem;
-        width: 33rem;
+        // position: absolute;
+        // right: -0.3rem;
+        // bottom: -0.1rem;
+        // width: 33rem;
         // right: 0;
         // bottom: 0;
         // width: 29rem;
-        display: block;
+        // display: block;
       }
 
-      @media (min-width: 1024px) {
-        right: -0.1rem;
-        bottom: 0.1rem;
-        width: 35rem;
-      }
+      // @media (min-width: 1024px) {
+      //   right: -0.1rem;
+      //   bottom: 0.1rem;
+      //   width: 35rem;
+      // }
+
+      // @media (min-width: 1200px) {
+      //   position: absolute;
+      //   right: -0.3rem;
+      //   bottom: -0.1rem;
+      //   width: 33rem;
+      //   display: block;
+      // }
 
       @media (min-width: 1440px) {
+        position: absolute;
         right: -0.1rem;
         bottom: 0.1rem;
         width: 47.1rem;
+        display: block;
       }
     }
   }
@@ -336,6 +355,7 @@
 
       @media (min-width: 900px) {
         margin-right: 3rem;
+        margin-bottom: 0;
       }
 
       @media (min-width: 1024px) {

@@ -9,11 +9,30 @@
     padding: 11rem 0;
   }
 
-  &__text {
+  &__inner {
     position: relative;
+    z-index: 1;
+    max-width: 113rem;
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      top: -0.1rem;
+      left: -0.1rem;
+      right: -0.2rem;
+      bottom: -0.1rem;
+      background: #00E8AD;
+      background: linear-gradient(180deg, #00E8AD, #201D54);
+      border-radius: 2.5rem;
+    }
+  }
+
+  &__text {
+    // position: relative;
     // width: 100%;
     // max-width: 128rem;
-    width: 113rem;
+    // width: 113rem;
     padding: 2.2rem 1.5rem 2.8rem 1.5rem;
     background: linear-gradient(253.84deg, rgba(48, 44, 116, 0) 2.2%, rgba(68, 64, 135, 0.4) 12.2%, rgba(48, 44, 116, 0) 61.23%), #201D54;
     box-shadow: inset 0 1rem 2rem rgba(255, 255, 255, 0.25);
@@ -35,18 +54,18 @@
       // background-size: cover;
     }
 
-    &::after {
-      position: absolute;
-      content: "";
-      z-index: -1;
-      top: -0.1rem;
-      left: -0.1rem;
-      right: -0.2rem;
-      bottom: -0.1rem;
-      background: #00E8AD;
-      background: linear-gradient(180deg, #00E8AD, #201D54);
-      border-radius: 2.5rem;
-    }
+    // &::after {
+    //   position: absolute;
+    //   content: "";
+    //   z-index: -1;
+    //   top: -0.1rem;
+    //   left: -0.1rem;
+    //   right: -0.2rem;
+    //   bottom: -0.1rem;
+    //   background: #00E8AD;
+    //   background: linear-gradient(180deg, #00E8AD, #201D54);
+    //   border-radius: 2.5rem;
+    // }
 
 
     // &::before {

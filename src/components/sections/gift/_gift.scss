@@ -1,4 +1,5 @@
 .gift {
+  position: relative;
   padding: 2rem 0 2.7rem 0;
 
   @media (min-width: 500px) {
@@ -9,101 +10,174 @@
     padding: 9.1rem 0 10.7rem 0;
   }
 
-  &__inner {
-    position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
+    height: 100%;
+    background: radial-gradient(52.7% 52.7% at 50.59% 50%, rgba(63, 58, 148, 0.4) 0%, rgba(63, 58, 148, 0) 100%), radial-gradient(41.37% 41.37% at 19.51% 52.86%, rgba(217, 217, 217, 0.224) 0%, rgba(217, 217, 217, 0) 100%);
+    filter: blur(10rem);
+    border-radius: 7.6rem;
 
-    &::before {
-      position: absolute;
-      content: "";
-      top: 50%;
+    @media (min-width: 1200px) {
+      top: 68%;
       left: 50%;
-      transform: translate(-50%, -50%);
       width: 100%;
       height: 100%;
-      background: radial-gradient(52.7% 52.7% at 50.59% 50%, rgba(63, 58, 148, 0.4) 0%, rgba(63, 58, 148, 0) 100%), radial-gradient(41.37% 41.37% at 19.51% 52.86%, rgba(217, 217, 217, 0.224) 0%, rgba(217, 217, 217, 0) 100%);
-      filter: blur(10rem);
-      border-radius: 7.6rem;
+      transform: translate(-50%,-50%);
+      // top: 62%;
+      // left: -2rem;
+      // transform: translateY(-70%);
+      // width: 70%;
+      // height: 62%;
+    }
+  }
 
-      @media (min-width: 1200px) {
-        top: 62%;
-        left: -2rem;
-        transform: translateY(-70%);
-        width: 70%;
-        height: 62%;
-      }
+  h2 {
+    // max-width: 65rem;
+    max-width: 32rem;
+    margin: 0 auto 9.3rem auto;
+    @include AppleSDGothicNeoExtraBold();
+    font-size: 2.6rem;
+    line-height: 3.1rem;
+    text-align: center;
+    color: var(--white-main);
+
+    @media (min-width: 500px) {
+      font-size: 2.8rem;
+      line-height: 3.3rem;
     }
 
-    h2 {
-      max-width: 65rem;
-      margin: 0 auto 9.3rem auto;
-      @include AppleSDGothicNeoExtraBold();
-      font-size: 2.6rem;
-      line-height: 3.1rem;
-      text-align: center;
-      color: var(--white-main);
-
-      @media (min-width: 500px) {
-        font-size: 2.8rem;
-        line-height: 3.3rem;
-      }
-
-      @media (min-width: 650px) {
-        font-size: 3rem;
-        line-height: 3.6rem;
-      }
-
-      @media (min-width: 900px) {
-        font-size: 3.2rem;
-        line-height: 3.8rem;
-      }
-
-      @media (min-width: 1024px) {
-        margin: 0 auto 12.3rem auto;
-        font-size: 3.5rem;
-        line-height: 4.5rem;
-      }
-
-      @media (min-width: 1200px) {
-        max-width: 90.2rem;
-        // margin: 0 auto 12.3rem auto;
-        font-size: 5.2rem;
-        line-height: 6.2rem;
-      }
+    @media (min-width: 650px) {
+      max-width: 38rem;
+      font-size: 3rem;
+      line-height: 3.6rem;
     }
+
+    @media (min-width: 900px) {
+      max-width: 40rem;
+      font-size: 3.2rem;
+      line-height: 3.8rem;
+    }
+
+    @media (min-width: 1024px) {
+      max-width: 44rem;
+      margin: 0 auto 12.3rem auto;
+      font-size: 3.5rem;
+      line-height: 4.5rem;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 90.2rem;
+      // margin: 0 auto 12.3rem auto;
+      font-size: 5.2rem;
+      line-height: 6.2rem;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    position: relative;
+    z-index: 1;
+    width: 29rem;
+
+    @media (min-width: 375px) {
+      width: 34rem;
+    }
+
+    @media (min-width: 650px) {
+      width: 40rem;
+    }
+
+    @media (min-width: 900px) {
+      width: 50rem;
+    }
+
+    @media (min-width: 1024px) {
+      width: 98rem;
+    }
+
+    @media (min-width: 1200px) {
+      width: 114rem;
+    }
+
+    @media (min-width: 1440px) {
+      width: 136rem;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      top: -0.1rem;
+      left: -0.1rem;
+      right: -0.2rem;
+      bottom: -0.1rem;
+      height: 78%;
+      background: #00E8AD;
+      background: linear-gradient(180deg, #00E8AD, #201D54);
+      border-radius: 2.5rem;
+    }
+
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   width: 100%;
+    //   height: 100%;
+    //   background: radial-gradient(52.7% 52.7% at 50.59% 50%, rgba(63, 58, 148, 0.4) 0%, rgba(63, 58, 148, 0) 100%), radial-gradient(41.37% 41.37% at 19.51% 52.86%, rgba(217, 217, 217, 0.224) 0%, rgba(217, 217, 217, 0) 100%);
+    //   filter: blur(10rem);
+    //   border-radius: 7.6rem;
+
+    //   @media (min-width: 1200px) {
+    //     top: 62%;
+    //     left: -2rem;
+    //     transform: translateY(-70%);
+    //     width: 70%;
+    //     height: 62%;
+    //   }
+    // }
   }
 
   &__block {
     position: relative;
     width: 100%;
-    max-width: 87.5rem;
+    // max-width: 87.5rem;
     display: flex;
     flex-direction: column;
     // margin: 0 auto 8.8rem auto;
     margin: 0 auto;
     padding: 22rem 2.1rem 11.2rem 2.1rem;
-    background: url("../img/icons/gift-bg-xs.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
+    background: radial-gradient(49.58% 50% at 50% 50%, rgba(47, 43, 114, 0.4) 0%, rgba(48, 44, 116, 0) 100%), #201D54;
+    box-shadow: inset 0 1.5rem 3.8rem rgba(255, 255, 255, 0.25);
+    border-radius: 2.5rem;
+    // background: url("../img/icons/gift-bg-xs.svg");
+    // background-repeat: no-repeat;
+    // background-position: 0 0;
+    // background-size: cover;
 
     @media (min-width: 1024px) {
-      max-width: 100rem;
+      // max-width: 100rem;
       padding: 6.2rem 4rem 7.4rem 45rem;
     }
 
     @media (min-width: 1200px) {
-      max-width: 117rem;
-      margin: 0 auto 7.8rem auto;
+      // max-width: 117rem;
+      margin: 0 auto 5rem auto;
       padding: 7.5rem 6.5rem 7.5rem 56rem;
     }
 
     @media (min-width: 1440px) {
-      max-width: 136rem;
-      padding: 7.5rem 4.5rem 7.5rem 61rem;
-      background: url("../img/icons/gift-bg.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
+      // max-width: 136rem;
+      padding: 7.5rem 4.5rem 7.5rem 64rem;
+      // background: url("../img/icons/gift-bg.svg");
+      // background-repeat: no-repeat;
+      // background-position: 0 0;
       // background-size: cover;
     }
 
@@ -152,13 +226,14 @@
       @media (min-width: 1440px) {
         width: 57rem;
         height: 57.1rem;
+        // top: 55%;
       }
     }
   }
 
   &__text {
     width: 100%;
-    max-width: 59.5rem;
+    // max-width: 59.5rem;
     align-self: center;
 
     @media (min-width: 1200px) {
@@ -175,12 +250,12 @@
       display: flex;
       justify-content: space-between;
       @include AppleSDGothicNeoRegular();
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       line-height: 1.8rem;
       color: var(--white-main);
 
       @media (min-width: 375px) {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         line-height: 2rem;
       }
 
@@ -218,7 +293,7 @@
 
       span {
         @include AppleSDGothicNeoExtraBold();
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         line-height: 2rem;
         text-align: right;
         text-transform: uppercase;

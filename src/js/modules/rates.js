@@ -36,20 +36,20 @@ export default function rates() {
 
   // Вешаем обработчик на событие resize, чтобы показывать все кнопки с классом btn-more,
   // если ширина окна становится больше определенного порога
-  window.addEventListener('resize', () => {
-    const btnsMore = document.querySelectorAll('.btn-more');
-    btnsMore.forEach((btn) => {
-      btn.style.display = 'block';
-    });
+  // window.addEventListener('resize', () => {
+  //   const btnsMore = document.querySelectorAll('.btn-more');
+  //   btnsMore.forEach((btn) => {
+  //     btn.style.display = 'block';
+  //   });
 
-    const blocks = document.querySelectorAll('.rate__item');
-    blocks.forEach((block) => {
-      block.classList.remove('rate__item--active');
-      const innerElement = block.querySelector('.rate__item__inner');
-      innerElement.classList.remove('rate__item__inner--active');
-      const btnMore = block.querySelector('.btn-more');
-      btnMore.style.display = 'block';
-    });
-  });
+  //   const blocks = document.querySelectorAll('.rate__item');
+  //   blocks.forEach((block) => {
+  //     block.classList.remove('rate__item--active');
+  //     const innerElement = block.querySelector('.rate__item__inner');
+  //     innerElement.classList.remove('rate__item__inner--active');
+  //     const btnMore = block.querySelector('.btn-more');
+  //     btnMore.style.display = 'block';
+  //   });
+  // });
 
 }

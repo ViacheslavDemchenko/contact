@@ -1338,6 +1338,7 @@ footer {
   padding: 2.5rem 3.2rem;
   margin: 0;
   border-radius: 2.5rem;
+  pointer-events: none;
   background: -webkit-radial-gradient(50% 50%, 49.58% 50%, rgba(47, 43, 114, 0.4) 0%, rgba(48, 44, 116, 0) 100%), #161445;
   background: radial-gradient(49.58% 50% at 50% 50%, rgba(47, 43, 114, 0.4) 0%, rgba(48, 44, 116, 0) 100%), #161445;
   border-radius: 25px;
@@ -1483,6 +1484,7 @@ footer {
   padding: 1.65rem 6.7rem 1.65rem 6.7rem;
   font-size: 1.1rem;
   line-height: 0.3rem;
+  pointer-events: visible;
 }
 
 .rate__item__inner {

@@ -220,6 +220,7 @@
     padding: 2.5rem 3.2rem;
     margin: 0;
     border-radius: 2.5rem;
+    pointer-events: none;
     // background-repeat: no-repeat;
     // background-size: 100% 100%;
     background: radial-gradient(49.58% 50% at 50% 50%, rgba(47, 43, 114, 0.4) 0%, rgba(48, 44, 116, 0) 100%), #161445;
@@ -512,6 +513,7 @@
       padding: 1.65rem 6.7rem 1.65rem 6.7rem;
       font-size: 1.1rem;
       line-height: 0.3rem;
+      pointer-events: visible;
 
       @media (min-width: 500px) {
         padding: 2rem 6.7rem 2rem 6.7rem;

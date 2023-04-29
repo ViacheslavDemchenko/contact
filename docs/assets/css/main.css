@@ -1257,7 +1257,7 @@ footer {
 
 .rate__item-wrap {
   position: relative;
-  z-index: 1;
+  z-index: 100;
 }
 
 .rate__item-wrap:not(:last-of-type) {
@@ -1280,11 +1280,6 @@ footer {
 
 .rate__item-wrap:nth-of-type(1) .rate__item::after {
   background: url("../img/icons/line-blue.svg") 100% 100%/cover no-repeat;
-}
-
-.rate__item-wrap:nth-of-type(2) {
-  position: relative;
-  z-index: 2;
 }
 
 .rate__item-wrap:nth-of-type(2)::after {
@@ -1562,6 +1557,7 @@ footer {
 
 .question {
   position: relative;
+  z-index: 1000;
   padding: 2rem 0 2.8rem 0;
   overflow-x: hidden;
 }
